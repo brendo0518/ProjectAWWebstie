@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Adrian Wolfe">
+  <rect width="64" height="64" fill="#16130f"/>
+  <path d="M12 49 26 13h7l14 36h-8l-3-8H23l-3 8h-8Zm15-18h9l-4.5-13L27 31Z" fill="#f4efe6"/>
+  <path d="M38 13h7l-6 20 6 16h-7l-6-16 6-20Z" fill="#b5361f"/>
+  <path d="M8 56h48" stroke="#a9852f" stroke-width="3" stroke-linecap="round"/>
+</svg>
