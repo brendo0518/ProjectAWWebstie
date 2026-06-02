@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Adrian Wolfe — What Actually Happened to the Way We Love</title>
-<meta name="description" content="Adrian Wolfe writes about love, identity, and connection in the digital age — with data, not blame. Essays, the podcast The Disconnect, and The Modern Relationships Series.">
+<meta name="description" content="Adrian Wolfe writes about love, identity, and connection in the digital age — with data, not blame. Essays, the book, and the Modern Relationships Series.">
 <meta property="og:title" content="Adrian Wolfe">
 <meta property="og:description" content="What actually happened to the way we love — explained with data, not blame.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400&family=Spline+Sans+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400&amp;family=Spline+Sans+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#16130f; --paper:#f4efe6; --paper-2:#ece4d6;
@@ -49,7 +50,7 @@ header.hero{padding:96px 0 78px;position:relative}
 .btn:hover{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-2px)}
 .btn.ghost{background:transparent;color:var(--ink)}
 .btn.ghost:hover{background:var(--ink);color:var(--paper)}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal{opacity:1;transform:none;transition:opacity .8s ease,transform .8s ease}
 .reveal.in{opacity:1;transform:none}
 
 section{padding:88px 0;position:relative}
@@ -63,7 +64,7 @@ section{padding:88px 0;position:relative}
 .thesis blockquote em{font-style:italic;color:#e9b949}
 .thesis .by{margin-top:28px;color:#b3a895}
 
-/* ESSAYS / SUBSTACK HUB */
+/* ESSAYS / LIBRARY */
 .essays-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);margin-bottom:36px}
 @media(max-width:760px){.essays-grid{grid-template-columns:1fr}}
 .essay{background:var(--paper);padding:28px 26px;transition:background .25s;text-decoration:none;color:var(--ink);display:block}
@@ -71,30 +72,26 @@ section{padding:88px 0;position:relative}
 .essay .etag{font-family:'Spline Sans Mono',monospace;font-size:.62rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
 .essay h3{font-size:1.3rem;font-weight:600;margin:12px 0 8px;line-height:1.15}
 .essay p{color:var(--muted);font-size:.96rem;line-height:1.5}
+.essay .read-link{display:inline-block;margin-top:18px;font-family:'Spline Sans Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 .sub-cta{background:var(--paper-2);border:1px solid var(--line);border-radius:6px;padding:34px;text-align:center}
 .sub-cta h3{font-size:1.6rem;font-weight:600;margin-bottom:10px}
 .sub-cta p{color:var(--muted);max-width:46ch;margin:0 auto 22px}
 .field{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
 .field input{flex:1;min-width:200px;padding:14px 16px;border:1px solid var(--line);background:#fff;font-family:'Newsreader',serif;font-size:1rem}
+.newsletter-form{position:relative}
+.form-note{font-size:.82rem;color:var(--muted);line-height:1.45;margin-top:14px}
+.form-status{min-height:1.4em;margin-top:12px;font-family:'Spline Sans Mono',monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 
 /* PODCAST */
 .podcast{background:var(--accent-2);color:#eef3f5}
 .podcast .sec-head{border-color:rgba(255,255,255,.2)}
 .podcast .sec-head h2{color:#fff}
-.pod-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
-@media(max-width:760px){.pod-grid{grid-template-columns:1fr}}
-.pod-name{font-family:'Fraunces',serif;font-size:clamp(2.1rem,5vw,3.6rem);font-weight:900;color:#fff;line-height:1}
+.podcast-coming{max-width:840px;margin:0 auto;text-align:center;padding:28px 0}
+.pod-name{font-family:'Fraunces',serif;font-size:clamp(3rem,11vw,7rem);font-weight:900;color:#fff;line-height:.9}
 .pod-name b{color:#e9b949}
-.pod-grid p{margin-top:20px;color:#cdd9de;max-width:42ch}
-.pod-player{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:6px;padding:24px}
-.ep{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.12)}
-.ep:last-child{border:none}
-.ep .play{flex:0 0 38px;height:38px;border-radius:50%;background:#e9b949;color:var(--accent-2);display:flex;align-items:center;justify-content:center;font-size:.9rem}
-.ep .et{font-family:'Fraunces',serif;font-weight:600;font-size:1.02rem;color:#fff}
-.ep .ed{font-size:.82rem;color:#a9b9c0}
-.sub-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
-.sub-row a{font-family:'Spline Sans Mono',monospace;font-size:.64rem;text-transform:uppercase;letter-spacing:.1em;color:#eef3f5;border:1px solid rgba(255,255,255,.3);padding:9px 15px;text-decoration:none;border-radius:3px;transition:all .2s}
-.sub-row a:hover{background:#e9b949;color:var(--accent-2);border-color:#e9b949}
+.coming-label{color:#e9b949;margin-bottom:24px}
+.coming-quote{font-family:'Fraunces',serif;font-size:clamp(1.35rem,3.2vw,2rem);line-height:1.25;color:#eef3f5;max-width:25ch;margin:28px auto 0}
+.podcast-coming p:not(.coming-quote){color:#cdd9de;max-width:44ch;margin:22px auto 0}
 
 /* BOOK FEATURE */
 .book-feat{display:grid;grid-template-columns:0.8fr 1.2fr;gap:56px;align-items:center}
@@ -136,6 +133,8 @@ section{padding:88px 0;position:relative}
 .news .btn{background:#e9b949;color:var(--ink);border-color:#e9b949}
 .news .btn:hover{background:#fff;border-color:#fff}
 .news .fine{margin-top:16px;font-family:'Spline Sans Mono',monospace;font-size:.6rem;letter-spacing:.1em;color:#8a8070}
+.news .form-note{color:#8a8070;max-width:52ch;margin:16px auto 0}
+.news .form-status{color:#e9b949}
 
 footer{padding:44px 0;border-top:1px solid var(--line);text-align:center}
 footer .brand{font-size:1rem;margin-bottom:10px}
@@ -162,13 +161,13 @@ footer .mono{color:var(--muted)}
 
 <header class="hero">
   <div class="wrap">
-    <div class="mono hero-kicker reveal">Essays · Podcast · The Modern Relationships Series</div>
+    <div class="mono hero-kicker reveal">Essays · The Book · The Modern Relationships Series</div>
     <h1 class="reveal">What actually happened to <em>love.</em></h1>
     <p class="hero-sub reveal">A serious look at dating, marriage, and connection in the digital age — built on research, not resentment. The crisis in modern relationships isn't a war between the sexes. It's what happened to both of them inside an economy that profits from our loneliness.</p>
     <div class="hero-rule reveal"></div>
     <div class="cta-row reveal">
-      <a href="#subscribe" class="btn">Read the Essays — Free</a>
-      <a href="#podcast" class="btn ghost">Listen to the Podcast</a>
+      <a href="#essays" class="btn">Explore the Essays</a>
+      <a href="#podcast" class="btn ghost">Podcast Coming Soon</a>
     </div>
   </div>
 </header>
@@ -181,23 +180,26 @@ footer .mono{color:var(--muted)}
   </div>
 </section>
 
-<!-- ESSAYS / SUBSTACK HUB — the top of the funnel -->
+<!-- ESSAYS / LIBRARY — publish essay pages in /essays -->
 <section id="essays">
   <div class="wrap">
     <div class="sec-head reveal"><span class="num">01</span><h2>The Essays</h2></div>
-    <p class="reveal" style="max-width:60ch;margin-bottom:36px;color:#2c261e;font-size:1.12rem">One honest essay each week on modern love — data, cultural criticism, and the occasional uncomfortable truth. No outrage. No noise. This is where every idea starts.</p>
+    <p class="reveal" style="max-width:60ch;margin-bottom:36px;color:#2c261e;font-size:1.12rem">One honest essay each week on modern love — data, cultural criticism, and the occasional uncomfortable truth. Subscribers get new pieces first; selected essays join the public archive over time.</p>
     <div class="essays-grid">
-      <a href="#subscribe" class="essay reveal"><div class="etag">The Data</div><h3>Why the 50% Divorce Myth Won't Die</h3><p>The most-repeated statistic about marriage was never true — and the real number changes everything.</p></a>
-      <a href="#subscribe" class="essay reveal"><div class="etag">The Divide</div><h3>The Loneliness That Isn't Gendered</h3><p>Everyone believes loneliness is a male epidemic. The research says something stranger.</p></a>
-      <a href="#subscribe" class="essay reveal"><div class="etag">The Machine</div><h3>The Dating App That Profits When You Lose</h3><p>Its best outcome for you is its worst outcome for itself. That's not a bug.</p></a>
+      <a href="essays/index.html" class="essay reveal"><div class="etag">Archive</div><h3>The Public Library</h3><p>Finished essays will live here, collected in one quiet place for readers who want the argument without the noise.</p><span class="read-link">Open Library</span></a>
+      <a href="#subscribe" class="essay reveal"><div class="etag">Subscriber First</div><h3>The Letter Before the Archive</h3><p>New pieces go to subscribers first, with the public archive growing after each essay has had time to breathe.</p><span class="read-link">Join the Letter</span></a>
+      <a href="#book" class="essay reveal"><div class="etag">Series</div><h3>The Modern Relationships Series</h3><p>The essays are the living notebook behind the book: the data, the culture, and the parts people keep avoiding.</p><span class="read-link">Explore the Book</span></a>
     </div>
     <div class="sub-cta reveal">
-      <h3>Start reading — it's free</h3>
-      <p>Join readers thinking clearly about modern relationships. New essay every week, straight to your inbox.</p>
-      <form class="field" onsubmit="event.preventDefault();this.querySelector('input').value='';this.querySelector('.btn').textContent='Subscribed ✓';">
-        <input type="email" placeholder="your@email.com" required aria-label="Email">
+      <h3>Subscribe for new essays</h3>
+      <p>Join readers thinking clearly about modern relationships. New essays arrive by email once the letter opens.</p>
+      <form class="field newsletter-form" action="https://example.us1.list-manage.com/subscribe/post?u=YOUR_USER_ID&amp;id=YOUR_AUDIENCE_ID&amp;f_id=YOUR_FORM_ID" method="post" target="_blank" novalidate data-newsletter-form>
+        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email">
+        <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_YOUR_USER_ID_YOUR_AUDIENCE_ID" tabindex="-1" value=""></div>
         <button class="btn" type="submit">Subscribe</button>
       </form>
+      <div class="form-note">You will receive a confirmation email when subscriptions are live.</div>
+      <div class="form-status" aria-live="polite" data-form-status></div>
     </div>
   </div>
 </section>
@@ -206,19 +208,11 @@ footer .mono{color:var(--muted)}
 <section id="podcast" class="podcast">
   <div class="wrap">
     <div class="sec-head reveal"><span class="num" style="color:#e9b949">02</span><h2>The Podcast</h2></div>
-    <div class="pod-grid">
-      <div class="reveal">
-        <div class="pod-name">The <b>Disconnect</b></div>
-        <p>The essays, spoken and expanded — plus conversations with the researchers, sociologists, and therapists who actually study what happened to the way we relate. One idea per episode. Always backed by data.</p>
-        <div class="sub-row">
-          <a href="#">Apple Podcasts</a><a href="#">Spotify</a><a href="#">YouTube</a><a href="#">RSS</a>
-        </div>
-      </div>
-      <div class="pod-player reveal">
-        <div class="ep"><div class="play">▶</div><div><div class="et">01 · The Diagnosis Everyone Gets Wrong</div><div class="ed">Why "weak men" and "entitled women" both miss the point. — 34 min</div></div></div>
-        <div class="ep"><div class="play">▶</div><div><div class="et">02 · The Loneliness That Isn't Gendered</div><div class="ed">What Pew's data actually shows. — 29 min</div></div></div>
-        <div class="ep"><div class="play">▶</div><div><div class="et">03 · The Great Divergence</div><div class="ed">The widest gender gap in modern polling. — 38 min</div></div></div>
-      </div>
+    <div class="podcast-coming reveal">
+      <div class="mono coming-label">The Disconnect</div>
+      <div class="pod-name">Coming <b>Soon</b></div>
+      <div class="coming-quote">"Some conversations should wait until the evidence has had its turn."</div>
+      <p>The podcast will arrive when the essays have earned a voice. Until then, the written work leads.</p>
     </div>
   </div>
 </section>
@@ -240,7 +234,7 @@ footer .mono{color:var(--muted)}
         <p>Everyone has a theory about why dating is broken. Almost all of them are wrong. Drawing on research from Pew, the U.S. Census, and leading social scientists, this is the book that refuses to give you a villain — and gives you an accurate picture instead.</p>
         <p>Why marriage is declining even as divorce falls. Why the "male loneliness epidemic" is both real and a myth. How young men and women became two cultures. What each sex has genuinely lost — stated with equal honesty.</p>
         <div class="cta-row" style="margin-top:24px">
-          <a href="#" class="btn">Get it on Amazon</a>
+          <a href="#subscribe" class="btn">Get Launch Updates</a>
           <a href="#subscribe" class="btn ghost">Read the essays first</a>
         </div>
       </div>
@@ -285,10 +279,13 @@ footer .mono{color:var(--muted)}
     <div class="mono" style="color:#e9b949;margin-bottom:22px">Join the Letter</div>
     <h2>One honest essay on modern love, every week.</h2>
     <p>Data, cultural criticism, and the occasional uncomfortable truth — in your inbox. No outrage. No noise. Unsubscribe anytime.</p>
-    <form onsubmit="event.preventDefault();this.querySelector('input').value='';this.querySelector('.btn').textContent='Subscribed ✓';">
-      <input type="email" placeholder="your@email.com" required aria-label="Email address">
+    <form class="newsletter-form" action="https://example.us1.list-manage.com/subscribe/post?u=YOUR_USER_ID&amp;id=YOUR_AUDIENCE_ID&amp;f_id=YOUR_FORM_ID" method="post" target="_blank" novalidate data-newsletter-form>
+      <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address">
+      <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_YOUR_USER_ID_YOUR_AUDIENCE_ID" tabindex="-1" value=""></div>
       <button class="btn" type="submit">Subscribe Free</button>
     </form>
+    <div class="form-note">You will receive a confirmation email when subscriptions are live.</div>
+    <div class="form-status" aria-live="polite" data-form-status></div>
     <div class="fine">This is not a war. It never was.</div>
   </div>
 </section>
@@ -306,6 +303,21 @@ footer .mono{color:var(--muted)}
 <script>
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1});
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%6*55)+'ms';io.observe(el);});
+document.querySelectorAll('[data-newsletter-form]').forEach((form)=>{
+  const status=form.parentElement.querySelector('[data-form-status]');
+  if(form.action.includes('YOUR_USER_ID')){
+    form.addEventListener('submit',(event)=>{
+      event.preventDefault();
+      if(status) status.textContent='Subscriptions open soon. The letter is being connected.';
+    });
+  }else{
+    form.addEventListener('submit',()=>{
+      const button=form.querySelector('.btn');
+      if(button) button.textContent='Check Your Email';
+      if(status) status.textContent='Almost there. Check your inbox for the confirmation email.';
+    });
+  }
+});
 </script>
 </body>
 </html>
