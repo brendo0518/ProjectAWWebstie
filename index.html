@@ -194,12 +194,13 @@ footer .mono{color:var(--muted)}
     <div class="sub-cta reveal">
       <h3>Subscribe for new essays</h3>
       <p>Join readers thinking clearly about modern relationships. New essays arrive by email once the letter opens.</p>
-      <form class="field newsletter-form" action="https://example.us1.list-manage.com/subscribe/post?u=YOUR_USER_ID&amp;id=YOUR_AUDIENCE_ID&amp;f_id=YOUR_FORM_ID" method="post" target="_blank" novalidate data-newsletter-form>
+      <form class="field newsletter-form" action="https://adrianwolfe.us5.list-manage.com/subscribe/post?u=648a128898b01b8ab0ea2d1b4&amp;id=8f95249312&amp;f_id=00c5b9edf0" method="post" target="_blank" data-newsletter-form>
         <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email">
-        <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_YOUR_USER_ID_YOUR_AUDIENCE_ID" tabindex="-1" value=""></div>
+        <input type="hidden" name="tags" value="4541314,4541313">
+        <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_648a128898b01b8ab0ea2d1b4_8f95249312" tabindex="-1" value=""></div>
         <button class="btn" type="submit">Subscribe</button>
       </form>
-      <div class="form-note">You will receive a confirmation email when subscriptions are live.</div>
+      <div class="form-note">After subscribing, check your inbox for Adrian Wolfe's confirmation email.</div>
       <div class="form-status" aria-live="polite" data-form-status></div>
     </div>
   </div>
@@ -280,12 +281,13 @@ footer .mono{color:var(--muted)}
     <div class="mono" style="color:#e9b949;margin-bottom:22px">Join the Letter</div>
     <h2>One honest essay on modern love, every week.</h2>
     <p>Data, cultural criticism, and the occasional uncomfortable truth — in your inbox. No outrage. No noise. Unsubscribe anytime.</p>
-    <form class="newsletter-form" action="https://example.us1.list-manage.com/subscribe/post?u=YOUR_USER_ID&amp;id=YOUR_AUDIENCE_ID&amp;f_id=YOUR_FORM_ID" method="post" target="_blank" novalidate data-newsletter-form>
+    <form class="newsletter-form" action="https://adrianwolfe.us5.list-manage.com/subscribe/post?u=648a128898b01b8ab0ea2d1b4&amp;id=8f95249312&amp;f_id=00c5b9edf0" method="post" target="_blank" data-newsletter-form>
       <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address">
-      <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_YOUR_USER_ID_YOUR_AUDIENCE_ID" tabindex="-1" value=""></div>
+      <input type="hidden" name="tags" value="4541314,4541313">
+      <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_648a128898b01b8ab0ea2d1b4_8f95249312" tabindex="-1" value=""></div>
       <button class="btn" type="submit">Subscribe Free</button>
     </form>
-    <div class="form-note">You will receive a confirmation email when subscriptions are live.</div>
+    <div class="form-note">After subscribing, check your inbox for Adrian Wolfe's confirmation email.</div>
     <div class="form-status" aria-live="polite" data-form-status></div>
     <div class="fine">This is not a war. It never was.</div>
   </div>
@@ -306,18 +308,11 @@ const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.t
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%6*55)+'ms';io.observe(el);});
 document.querySelectorAll('[data-newsletter-form]').forEach((form)=>{
   const status=form.parentElement.querySelector('[data-form-status]');
-  if(form.action.includes('YOUR_USER_ID')){
-    form.addEventListener('submit',(event)=>{
-      event.preventDefault();
-      if(status) status.textContent='Subscriptions open soon. The letter is being connected.';
-    });
-  }else{
-    form.addEventListener('submit',()=>{
-      const button=form.querySelector('.btn');
-      if(button) button.textContent='Check Your Email';
-      if(status) status.textContent='Almost there. Check your inbox for the confirmation email.';
-    });
-  }
+  form.addEventListener('submit',()=>{
+    const button=form.querySelector('.btn');
+    if(button) button.textContent='Check Your Email';
+    if(status) status.textContent='Almost there. Check your inbox for the confirmation email.';
+  });
 });
 </script>
 </body>
