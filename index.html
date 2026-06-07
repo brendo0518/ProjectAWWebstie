@@ -1,362 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- ============================================================
+     BEFORE GOING LIVE: replace adriantwolfe.substack.com (appears 3x
+     in this file) with your real Substack address. Find & Replace all.
+     Then save as index.html and upload. That's it.
+     ============================================================ -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adrian Wolfe — What Actually Happened to the Way We Love</title>
-<meta name="description" content="Adrian Wolfe writes about love, identity, and connection in the digital age — with data, not blame. Essays, the book, and the Modern Relationships Series.">
-<meta property="og:title" content="Adrian Wolfe">
-<meta property="og:description" content="What actually happened to the way we love — explained with data, not blame.">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Adrian T. Wolfe — The Voice of Reason on Modern Love</title>
+<meta name="description" content="Not a war between men and women — but what happened to both of them inside an economy that profits from their loneliness. Essays, audio, and The Modern Relationships Series by Adrian T. Wolfe. Calm, data-driven, no sides.">
+<meta property="og:title" content="Adrian T. Wolfe">
+<meta property="og:description" content="The calm voice in a shouting room. Modern love, dating, marriage and loneliness — explained with data, not blame.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400&amp;family=Spline+Sans+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#16130f; --paper:#f4efe6; --paper-2:#ece4d6;
-  --accent:#b5361f; --accent-2:#1f3b4d; --gold:#a9852f;
-  --muted:#6f6557; --line:#d8cdba;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")}
-.wrap{max-width:1140px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
-.narrow{max-width:780px}
-h1,h2,h3,.display{font-family:'Fraunces',serif;line-height:1.03;letter-spacing:-.02em}
-.mono{font-family:'Spline Sans Mono',monospace;text-transform:uppercase;letter-spacing:.22em;font-size:.7rem}
+  :root{
+    --ink:#0e0c0a; --ink2:#16130f; --paper:#f4efe6; --paper-dim:#c9b89e;
+    --ox:#e8634a; --ox-deep:#b8402a; --gold:#c9a24a; --grey:#c9bda6;
+    --maxw:1180px;
+    --serif:'Fraunces',Georgia,serif;
+    --sans:'Archivo',system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--paper);font-family:var(--sans);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--ox);color:var(--ink)}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .serif{font-family:var(--serif)}
+  .mono{font-family:var(--sans);letter-spacing:.22em;text-transform:uppercase;font-size:.7rem;font-weight:600}
 
-/* NAV */
-nav{position:sticky;top:0;z-index:50;background:rgba(244,239,230,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-.brand{font-family:'Fraunces',serif;font-weight:900;font-size:1.18rem}
-.brand span{color:var(--accent)}
-.navlinks{display:flex;gap:28px;align-items:center}
-.navlinks a{color:var(--ink);text-decoration:none;font-family:'Spline Sans Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;opacity:.72;transition:opacity .2s}
-.navlinks a:hover{opacity:1;color:var(--accent)}
-.navlinks .navcta{background:var(--ink);color:var(--paper);padding:9px 16px;opacity:1;border-radius:2px}
-.navlinks .navcta:hover{background:var(--accent);color:#fff}
-@media(max-width:760px){.navlinks a:not(.navcta){display:none}}
+  /* grain + glow atmosphere */
+  body::before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.04;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .glow{position:fixed;border-radius:50%;filter:blur(120px);opacity:.5;z-index:0;pointer-events:none}
+  .glow.a{width:600px;height:600px;background:radial-gradient(circle,#6e241688,transparent 70%);top:-200px;right:-150px}
+  .glow.b{width:500px;height:500px;background:radial-gradient(circle,#7a5a1855,transparent 70%);bottom:10%;left:-180px}
 
-/* HERO */
-header.hero{padding:96px 0 78px;position:relative}
-.hero-kicker{color:var(--accent);margin-bottom:26px}
-.hero h1{font-size:clamp(2.9rem,8.5vw,6.6rem);font-weight:900;max-width:15ch}
-.hero h1 em{font-style:italic;color:var(--accent)}
-.hero-sub{font-size:clamp(1.12rem,2.4vw,1.5rem);max-width:48ch;margin-top:30px;color:#2c261e}
-.hero-rule{width:120px;height:3px;background:var(--ink);margin:38px 0}
-.cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:15px 30px;text-decoration:none;font-family:'Spline Sans Mono',monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;border:1px solid var(--ink);transition:all .2s;cursor:pointer}
-.btn:hover{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-2px)}
-.btn.ghost{background:transparent;color:var(--ink)}
-.btn.ghost:hover{background:var(--ink);color:var(--paper)}
-.reveal{opacity:1;transform:none;transition:opacity .8s ease,transform .8s ease}
-.reveal.in{opacity:1;transform:none}
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);background:rgba(14,12,10,.72);border-bottom:1px solid rgba(201,162,74,.16)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:var(--serif);font-weight:900;font-size:1.15rem;letter-spacing:.04em;word-spacing:.12em}
+  .brand b{color:var(--ox)}
+  .navlinks{display:flex;gap:30px;align-items:center}
+  .navlinks a{font-size:.82rem;font-weight:500;color:var(--paper-dim);transition:color .2s}
+  .navlinks a:hover{color:var(--paper)}
+  .nav-cta{background:var(--ox);color:var(--ink)!important;padding:9px 18px;border-radius:100px;font-weight:700;font-size:.8rem}
+  .nav-cta:hover{background:var(--paper)}
+  @media(max-width:760px){.navlinks a:not(.nav-cta){display:none}}
 
-section{padding:88px 0;position:relative}
-.sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:46px;border-bottom:1px solid var(--line);padding-bottom:18px}
-.sec-head .num{font-family:'Spline Sans Mono',monospace;color:var(--accent);font-size:.8rem}
-.sec-head h2{font-size:clamp(1.8rem,4vw,3rem);font-weight:600}
+  /* HERO */
+  header{position:relative;z-index:2;padding:150px 0 90px;overflow:hidden}
+  .eyebrow{color:var(--gold);margin-bottom:26px}
+  .js-anim .eyebrow{opacity:0;animation:rise .8s .1s forwards}
+  h1.hero{font-family:var(--serif);font-weight:900;font-size:clamp(2.7rem,7vw,5.4rem);line-height:1.02;letter-spacing:-.02em;max-width:14ch;margin-bottom:10px}
+  h1.hero .l1{display:block}
+  .js-anim h1.hero .l1{opacity:0;animation:rise .9s .2s forwards}
+  h1.hero .l2{display:block;color:var(--ox);font-style:italic;font-weight:600}
+  .js-anim h1.hero .l2{opacity:0;animation:rise .9s .38s forwards}
+  .hero-sub{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--paper-dim);max-width:46ch;margin:28px 0 38px}
+  .js-anim .hero-sub{opacity:0;animation:rise .9s .55s forwards}
+  .hero-sub b{color:var(--paper);font-weight:600}
 
-/* THESIS */
-.thesis{background:var(--ink);color:var(--paper)}
-.thesis blockquote{font-family:'Fraunces',serif;font-size:clamp(1.7rem,4.6vw,2.9rem);line-height:1.2;max-width:24ch}
-.thesis blockquote em{font-style:italic;color:#e9b949}
-.thesis .by{margin-top:28px;color:#b3a895}
+  /* PLAY BUTTON — the magnet */
+  .player{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  .js-anim .player{opacity:0;animation:rise .9s .72s forwards}
+  .play-btn{display:flex;align-items:center;gap:16px;background:linear-gradient(135deg,var(--ox),var(--ox-deep));color:var(--ink);border:none;padding:16px 30px 16px 20px;border-radius:100px;cursor:pointer;font-family:var(--sans);font-weight:800;font-size:1.02rem;transition:transform .25s,box-shadow .25s;box-shadow:0 10px 40px -8px rgba(232,99,74,.5)}
+  .play-btn:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 18px 50px -8px rgba(232,99,74,.65)}
+  .play-ic{width:46px;height:46px;border-radius:50%;background:var(--ink);display:grid;place-items:center;flex:none}
+  .play-ic svg{width:18px;height:18px;fill:var(--ox);margin-left:3px}
+  .play-meta{font-size:.84rem}
+  .play-meta .pm-top{font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.7rem}
+  .play-meta .pm-sub{font-weight:500;opacity:.75}
+  .listen-on{font-size:.74rem;color:var(--grey);letter-spacing:.04em}
+  .listen-on b{color:var(--paper-dim);font-weight:600}
 
-/* ESSAYS / LIBRARY */
-.essays-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);margin-bottom:36px}
-@media(max-width:760px){.essays-grid{grid-template-columns:1fr}}
-.essay{background:var(--paper);padding:28px 26px;transition:background .25s;text-decoration:none;color:var(--ink);display:block}
-.essay:hover{background:var(--paper-2)}
-.essay .etag{font-family:'Spline Sans Mono',monospace;font-size:.62rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
-.essay h3{font-size:1.3rem;font-weight:600;margin:12px 0 8px;line-height:1.15}
-.essay p{color:var(--muted);font-size:.96rem;line-height:1.5}
-.essay .read-link{display:inline-block;margin-top:18px;font-family:'Spline Sans Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-.sub-cta{background:var(--paper-2);border:1px solid var(--line);border-radius:6px;padding:34px;text-align:center}
-.sub-cta h3{font-size:1.6rem;font-weight:600;margin-bottom:10px}
-.sub-cta p{color:var(--muted);max-width:46ch;margin:0 auto 22px}
-.field{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
-.field input{flex:1;min-width:200px;padding:14px 16px;border:1px solid var(--line);background:#fff;font-family:'Newsreader',serif;font-size:1rem}
-.newsletter-form{position:relative}
-.form-note{font-size:.82rem;color:var(--muted);line-height:1.45;margin-top:14px}
-.form-status{min-height:1.4em;margin-top:12px;font-family:'Spline Sans Mono',monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  /* equalizer animation on play */
+  .eq{display:inline-flex;gap:3px;align-items:flex-end;height:18px;margin-left:2px}
+  .eq span{width:3px;background:var(--ink);border-radius:2px;height:6px}
+  .playing .eq span{animation:eq .8s infinite ease-in-out}
+  .playing .eq span:nth-child(2){animation-delay:.2s}
+  .playing .eq span:nth-child(3){animation-delay:.4s}
+  .playing .eq span:nth-child(4){animation-delay:.15s}
+  @keyframes eq{0%,100%{height:5px}50%{height:17px}}
 
-/* PODCAST */
-.podcast{background:var(--accent-2);color:#eef3f5}
-.podcast .sec-head{border-color:rgba(255,255,255,.2)}
-.podcast .sec-head h2{color:#fff}
-.podcast-coming{max-width:840px;margin:0 auto;text-align:center;padding:28px 0}
-.pod-name{font-family:'Fraunces',serif;font-size:clamp(3rem,11vw,7rem);font-weight:900;color:#fff;line-height:.9}
-.pod-name b{color:#e9b949}
-.coming-label{color:#e9b949;margin-bottom:24px}
-.coming-quote{font-family:'Fraunces',serif;font-size:clamp(1.35rem,3.2vw,2rem);line-height:1.25;color:#eef3f5;max-width:25ch;margin:28px auto 0}
-.podcast-coming p:not(.coming-quote){color:#cdd9de;max-width:44ch;margin:22px auto 0}
-.pod-platforms{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:30px}
-.pod-platforms a{font-family:'Spline Sans Mono',monospace;font-size:.64rem;text-transform:uppercase;letter-spacing:.1em;color:#eef3f5;border:1px solid rgba(255,255,255,.3);padding:9px 15px;text-decoration:none;border-radius:3px;transition:all .2s}
-.pod-platforms a:hover{background:#e9b949;color:var(--accent-2);border-color:#e9b949}
+  /* TRUST STRIP */
+  .trust{position:relative;z-index:2;border-top:1px solid rgba(201,162,74,.14);border-bottom:1px solid rgba(201,162,74,.14);padding:22px 0;background:rgba(22,19,15,.4)}
+  .trust .wrap{display:flex;gap:38px;justify-content:center;flex-wrap:wrap;align-items:center}
+  .trust span{font-family:var(--serif);font-style:italic;font-size:1.02rem;color:var(--paper-dim)}
+  .trust .dot{color:var(--ox);font-style:normal}
 
-/* BOOK FEATURE */
-.book-feat{display:grid;grid-template-columns:0.8fr 1.2fr;gap:56px;align-items:center}
-@media(max-width:760px){.book-feat{grid-template-columns:1fr;gap:32px}}
-.book-cover{aspect-ratio:1/1.5;background:linear-gradient(160deg,#1a1714,#0e0c0a);border:1px solid var(--line);box-shadow:0 30px 60px -20px rgba(0,0,0,.5);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30px;text-align:center}
-.book-cover .bc-series{font-family:'Spline Sans Mono',monospace;font-size:.5rem;letter-spacing:.2em;color:var(--gold);margin-bottom:18px}
-.book-cover .bc-title{font-family:'Fraunces',serif;font-weight:900;color:#faf6ee;font-size:1.5rem;line-height:1.1}
-.book-cover .bc-title .r{color:var(--accent)}
-.book-cover .bc-sub{font-style:italic;color:#c9bfae;font-size:.82rem;margin-top:14px}
-.book-cover .bc-auth{font-family:'Spline Sans Mono',monospace;font-size:.6rem;letter-spacing:.2em;color:#faf6ee;margin-top:24px}
-.book-feat h2{font-size:clamp(1.9rem,4vw,3rem);font-weight:600;margin-bottom:8px}
-.book-feat .bsub{font-style:italic;color:var(--accent);font-size:1.2rem;margin-bottom:20px}
-.book-feat p{margin-bottom:16px;color:#2c261e}
+  /* SECTION SHELL */
+  section{position:relative;z-index:2;padding:84px 0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
+  .sec-head .num{font-family:var(--serif);color:var(--ox);font-weight:600;font-size:1rem}
+  .sec-head h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.02em;line-height:1.05}
+  .sec-intro{color:var(--paper-dim);max-width:54ch;margin-bottom:42px;font-size:1.05rem}
 
-/* DATA */
-.data-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
-@media(max-width:760px){.data-grid{grid-template-columns:1fr}}
-.stat{background:var(--paper);padding:32px 24px}
-.stat .big{font-family:'Fraunces',serif;font-weight:900;font-size:2.7rem;color:var(--accent);line-height:1}
-.stat .lab{margin-top:10px;font-size:.95rem;color:#2c261e}
-.stat .src{margin-top:8px;font-family:'Spline Sans Mono',monospace;font-size:.56rem;color:var(--muted);letter-spacing:.06em}
-.data-note{margin-top:26px;font-style:italic;color:var(--muted);max-width:62ch}
+  /* TWO PATHS */
+  .paths{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:760px){.paths{grid-template-columns:1fr}}
+  .path{position:relative;border:1px solid rgba(201,162,74,.2);border-radius:18px;padding:34px 30px;overflow:hidden;transition:transform .3s,border-color .3s;background:linear-gradient(160deg,rgba(34,28,22,.6),rgba(14,12,10,.3))}
+  .path:hover{transform:translateY(-5px);border-color:var(--ox)}
+  .path .tag{font-family:var(--sans);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.68rem;color:var(--ox);margin-bottom:16px}
+  .path h3{font-family:var(--serif);font-size:1.7rem;font-weight:600;line-height:1.12;margin-bottom:12px}
+  .path p{color:var(--paper-dim);font-size:.96rem;margin-bottom:20px}
+  .path ul{list-style:none;margin-bottom:24px}
+  .path li{font-size:.92rem;padding:7px 0 7px 26px;position:relative;color:var(--paper)}
+  .path li::before{content:"";position:absolute;left:0;top:14px;width:11px;height:11px;border:2px solid var(--ox);border-radius:50%}
+  .path .go{font-weight:700;color:var(--ox);font-size:.92rem}
+  .path .big{position:absolute;right:-10px;top:-24px;font-family:var(--serif);font-size:8rem;font-weight:900;color:rgba(201,162,74,.06);pointer-events:none}
 
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:start}
-@media(max-width:760px){.about-grid{grid-template-columns:1fr}}
-.about-mark{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(3rem,9vw,6rem);color:var(--ink);line-height:.9}
-.about-mark span{color:var(--accent)}
-.about-grid .lead{font-size:1.25rem}
-.about-grid p{margin-bottom:16px}
+  /* EPISODES / LISTEN LIST */
+  .eps{display:flex;flex-direction:column;gap:2px}
+  .ep{display:flex;align-items:center;gap:20px;padding:20px 16px;border-radius:12px;cursor:pointer;transition:background .2s;border:1px solid transparent}
+  .ep:hover{background:rgba(34,28,22,.6);border-color:rgba(201,162,74,.18)}
+  .ep-play{width:44px;height:44px;flex:none;border-radius:50%;border:1.5px solid var(--ox);display:grid;place-items:center;transition:background .2s}
+  .ep:hover .ep-play{background:var(--ox)}
+  .ep-play svg{width:14px;height:14px;fill:var(--ox);margin-left:2px;transition:fill .2s}
+  .ep:hover .ep-play svg{fill:var(--ink)}
+  .ep-body{flex:1;min-width:0}
+  .ep-body h4{font-family:var(--serif);font-size:1.14rem;font-weight:600;margin-bottom:3px}
+  .ep-body p{font-size:.84rem;color:var(--grey)}
+  .ep-for{font-size:.64rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:100px;flex:none}
+  .ep-for.young{background:rgba(232,99,74,.14);color:var(--ox)}
+  .ep-for.older{background:rgba(201,162,74,.14);color:var(--gold)}
+  .ep-for.all{background:rgba(244,239,230,.1);color:var(--paper-dim)}
+  .ep-len{font-size:.78rem;color:var(--grey);flex:none;font-variant-numeric:tabular-nums}
+  @media(max-width:620px){.ep-for,.ep-len{display:none}}
 
-/* BLOG / SUPPORTERS */
-.feature-links{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
-@media(max-width:760px){.feature-links{grid-template-columns:1fr}}
-.feature-link{background:var(--paper);padding:28px 26px;text-decoration:none;color:var(--ink);display:block}
-.feature-link:hover{background:var(--paper-2)}
-.feature-link .tag{font-family:'Spline Sans Mono',monospace;font-size:.62rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
-.feature-link h3{font-size:1.35rem;font-weight:600;margin:12px 0 8px;line-height:1.15}
-.feature-link p{color:var(--muted);font-size:.96rem;line-height:1.5}
-.feature-link span{display:inline-block;margin-top:18px;font-family:'Spline Sans Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  /* THESIS BLOCK */
+  .thesis{position:relative;z-index:2;padding:90px 0}
+  .thesis-card{border-left:3px solid var(--ox);padding:8px 0 8px 34px;max-width:60ch}
+  .thesis-card .q{font-family:var(--serif);font-size:clamp(1.5rem,3.4vw,2.4rem);font-weight:400;font-style:italic;line-height:1.28}
+  .thesis-card .q b{font-style:normal;font-weight:600;color:var(--ox)}
+  .thesis-card .attr{margin-top:22px;color:var(--grey);font-size:.85rem;letter-spacing:.06em}
 
-/* FINAL CTA */
-.news{background:var(--ink);color:var(--paper);text-align:center}
-.news h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:600;max-width:18ch;margin:0 auto 18px;color:#fff}
-.news p{max-width:50ch;margin:0 auto 30px;color:#c9bfae}
-.news form{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
-.news input{flex:1;min-width:220px;padding:15px 18px;border:1px solid #3a342b;background:#211c16;color:var(--paper);font-family:'Newsreader',serif;font-size:1rem}
-.news input::placeholder{color:#8a8070}
-.news .btn{background:#e9b949;color:var(--ink);border-color:#e9b949}
-.news .btn:hover{background:#fff;border-color:#fff}
-.news .fine{margin-top:16px;font-family:'Spline Sans Mono',monospace;font-size:.6rem;letter-spacing:.1em;color:#8a8070}
-.news .form-note{color:#8a8070;max-width:52ch;margin:16px auto 0}
-.news .form-status{color:#e9b949}
+  /* SUBSCRIBE */
+  #subscribe{position:relative;z-index:2;padding:90px 0}
+  .sub-box{background:linear-gradient(150deg,rgba(46,36,28,.85),rgba(20,16,12,.6));border:1px solid rgba(201,162,74,.25);border-radius:22px;padding:54px 44px;text-align:center;position:relative;overflow:hidden}
+  .sub-box::before{content:"";position:absolute;width:340px;height:340px;background:radial-gradient(circle,rgba(232,99,74,.18),transparent 70%);top:-120px;right:-80px;border-radius:50%}
+  .sub-box h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:14px;position:relative}
+  .sub-box p{color:var(--paper-dim);max-width:46ch;margin:0 auto 30px;position:relative}
+  .sub-btn{display:inline-block;background:var(--ox);color:var(--ink);font-weight:800;font-size:1.02rem;padding:17px 38px;border-radius:100px;position:relative;transition:transform .25s,background .2s}
+  .sub-btn:hover{transform:translateY(-3px);background:var(--paper)}
+  .sub-fine{margin-top:18px;font-size:.78rem;color:var(--grey);position:relative}
 
-footer{padding:44px 0;border-top:1px solid var(--line);text-align:center}
-footer .brand{font-size:1rem;margin-bottom:10px}
-footer .fnav{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
-footer .fnav a{color:var(--muted);text-decoration:none;font-family:'Spline Sans Mono',monospace;font-size:.62rem;text-transform:uppercase;letter-spacing:.14em}
-footer .fnav a:hover{color:var(--accent)}
-footer .mono{color:var(--muted)}
-.socials{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0}
-.socials a{font-family:'Spline Sans Mono',monospace;font-size:.58rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink);border:1px solid var(--line);padding:8px 12px;text-decoration:none;border-radius:3px;background:rgba(255,255,255,.25)}
-.socials a:hover{border-color:var(--accent);color:var(--accent)}
+  /* FOOTER */
+  footer{position:relative;z-index:2;border-top:1px solid rgba(201,162,74,.14);padding:46px 0;text-align:center}
+  footer .brand{font-size:1.4rem;margin-bottom:10px}
+  footer p{color:var(--grey);font-size:.82rem;max-width:50ch;margin:0 auto 8px}
+  footer .flinks{display:flex;gap:22px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+  footer .flinks a{font-size:.82rem;color:var(--paper-dim)}
+  footer .flinks a:hover{color:var(--ox)}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none!important}
+    .reveal,.js-anim .reveal{opacity:1!important;transform:none!important}
+    .eyebrow,h1.hero .l1,h1.hero .l2,.hero-sub,.player{opacity:1!important;animation:none!important}
+  }
+  @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+  .reveal{opacity:1;transform:none}
+  .js-anim .reveal{opacity:.35;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .js-anim .reveal.in{opacity:1;transform:none}
+  
 </style>
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/648a128898b01b8ab0ea2d1b4/2d9c5d83b2f6a520c2945e1cd.js");</script>
 </head>
 <body>
+<div class="glow a"></div><div class="glow b"></div>
 
 <nav>
   <div class="wrap">
-    <div class="brand">ADRIAN<span>·</span>WOLFE</div>
+    <a class="brand" href="#top">ADRIAN T. <b>WOLFE</b></a>
     <div class="navlinks">
-      <a href="#essays">Essays</a>
-      <a href="#podcast">Podcast</a>
-      <a href="blog/index.html">Blog</a>
-      <a href="#book">The Book</a>
-      <a href="supporters/index.html">Supporters</a>
-      <a href="#about">About</a>
-      <a href="#subscribe" class="navcta">Subscribe</a>
+      <a href="listen.html">Listen</a>
+      <a href="books.html">The Books</a>
+      <a href="about.html">About</a>
+      <a href="#subscribe" class="nav-cta">Subscribe free</a>
     </div>
   </div>
 </nav>
 
-<header class="hero">
+<header id="top">
   <div class="wrap">
-    <div class="mono hero-kicker reveal">Essays · Blog · The Modern Relationships Series</div>
-    <h1 class="reveal">What actually happened to <em>love.</em></h1>
-    <p class="hero-sub reveal">A serious look at dating, marriage, and connection in the digital age — built on research, not resentment. The crisis in modern relationships isn't a war between the sexes. It's what happened to both of them inside an economy that profits from our loneliness.</p>
-    <div class="hero-rule reveal"></div>
-    <div class="cta-row reveal">
-      <a href="#essays" class="btn">Explore the Essays</a>
-      <a href="#podcast" class="btn ghost">Podcast Coming Soon</a>
+    <div class="mono eyebrow">The voice of reason on modern love</div>
+    <h1 class="hero">
+      <span class="l1">Everyone's shouting</span>
+      <span class="l2">about men and women.</span>
+    </h1>
+    <p class="hero-sub">It was never a war between the sexes. It's what happened to <b>both of them</b> inside an economy that profits from their loneliness. Calm, data-driven, no sides — for your commute, your walk, wherever you are.</p>
+
+    <div class="player">
+      <a class="play-btn" id="heroPlay" href="listen.html" aria-label="Listen now" style="text-decoration:none">
+        <span class="play-ic">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+        <span class="play-meta">
+          <span class="pm-top">Start here <span class="eq" aria-hidden="true"><span></span><span></span><span></span><span></span></span></span>
+          <span class="pm-sub">“The War That Was Installed” · 6 min</span>
+        </span>
+      </a>
+      <span class="listen-on">Also on <b>Spotify</b> · <b>Apple</b> · <b>Substack</b></span>
     </div>
   </div>
 </header>
 
-<section class="thesis">
-  <div class="wrap reveal">
-    <div class="mono" style="color:#e9b949;margin-bottom:24px">The Idea Behind Everything</div>
-    <blockquote>This is not a war between men and women. It is what happened to <em>both of them</em> inside an economy that profits from their loneliness.</blockquote>
-    <div class="by mono">— Adrian Wolfe</div>
-  </div>
-</section>
-
-<!-- ESSAYS / LIBRARY — publish essay pages in /essays -->
-<section id="essays">
+<div class="trust">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="num">01</span><h2>The Essays</h2></div>
-    <p class="reveal" style="max-width:60ch;margin-bottom:36px;color:#2c261e;font-size:1.12rem">One honest essay each week on modern love — data, cultural criticism, and the occasional uncomfortable truth. Subscribers get new pieces first; selected essays join the public archive over time.</p>
-    <div class="essays-grid">
-      <a href="essays/index.html" class="essay reveal"><div class="etag">Archive</div><h3>The Public Library</h3><p>Finished essays will live here, collected in one quiet place for readers who want the argument without the noise.</p><span class="read-link">Open Library</span></a>
-      <a href="#subscribe" class="essay reveal"><div class="etag">Subscriber First</div><h3>The Letter Before the Archive</h3><p>New pieces go to subscribers first, with the public archive growing after each essay has had time to breathe.</p><span class="read-link">Join the Letter</span></a>
-      <a href="#book" class="essay reveal"><div class="etag">Series</div><h3>The Modern Relationships Series</h3><p>The essays are the living notebook behind the book: the data, the culture, and the parts people keep avoiding.</p><span class="read-link">Explore the Book</span></a>
-    </div>
-    <div class="sub-cta reveal">
-      <h3>Subscribe for new essays</h3>
-      <p>Join readers thinking clearly about modern relationships. New essays arrive by email once the letter opens.</p>
-      <form class="field newsletter-form" action="https://adrianwolfe.us5.list-manage.com/subscribe/post?u=648a128898b01b8ab0ea2d1b4&amp;id=8f95249312&amp;f_id=00c5b9edf0" method="post" target="_blank" data-newsletter-form>
-        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email">
-        <input type="hidden" name="tags" value="4541314,4541313">
-        <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_648a128898b01b8ab0ea2d1b4_8f95249312" tabindex="-1" value=""></div>
-        <button class="btn" type="submit">Subscribe</button>
-      </form>
-      <div class="form-note">After subscribing, check your inbox for Adrian Wolfe's confirmation email.</div>
-      <div class="form-status" aria-live="polite" data-form-status></div>
-    </div>
+    <span>No blame.</span>
+    <span class="dot">/</span>
+    <span>No sides.</span>
+    <span class="dot">/</span>
+    <span>Just the truth, calmly.</span>
   </div>
-</section>
+</div>
 
-<!-- PODCAST -->
-<section id="podcast" class="podcast">
+<!-- TWO PATHS -->
+<section id="paths">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="num" style="color:#e9b949">02</span><h2>The Podcast</h2></div>
-    <div class="podcast-coming reveal">
-      <div class="mono coming-label">The Disconnect</div>
-      <div class="pod-name">Coming <b>Soon</b></div>
-      <div class="coming-quote">"Some conversations should wait until the evidence has had its turn."</div>
-      <p>The podcast will arrive when the essays have earned a voice. Until then, the written work leads.</p>
-      <div class="pod-platforms" aria-label="Podcast platforms">
-        <a href="https://open.spotify.com/" target="_blank" rel="noopener">Spotify</a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://podcasts.apple.com/" target="_blank" rel="noopener">Apple Podcasts</a>
-        <a href="https://music.amazon.com/podcasts" target="_blank" rel="noopener">Amazon Music</a>
+    <div class="sec-head reveal"><span class="num">01</span><h2>Where are you in the story?</h2></div>
+    <p class="sec-intro reveal">The same machine hits different people at different stages. Find your starting point — then listen your way through.</p>
+    <div class="paths">
+      <div class="path reveal">
+        <span class="big">20s</span>
+        <div class="tag">Starting out</div>
+        <h3>Dating, apps &amp; the comparison trap</h3>
+        <p>You're not broken and they're not all trash. The game is rigged upstream — here's how to see it and stop losing to it.</p>
+        <ul>
+          <li>Why the apps profit from your search, not your match</li>
+          <li>The loneliness hiding behind the highlight reel</li>
+          <li>How comparison quietly poisons real connection</li>
+        </ul>
+        <a class="go" href="listen.html">Start this track →</a>
+      </div>
+      <div class="path reveal">
+        <span class="big">40s</span>
+        <div class="tag">Further in</div>
+        <h3>Marriage, drift &amp; second chapters</h3>
+        <p>Long love in a world built to destabilise it. What changed, what's myth, and how to rebuild the conditions it actually needs.</p>
+        <ul>
+          <li>Why “half of marriages fail” is a statistical myth</li>
+          <li>The quiet withdrawal — and what's really behind it</li>
+          <li>Rebuilding the closed world a marriage runs on</li>
+        </ul>
+        <a class="go" href="listen.html">Start this track →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BOOK FEATURE -->
-<section id="book">
+<!-- LISTEN -->
+<section id="listen">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="num">03</span><h2>The Book</h2></div>
-    <div class="book-feat">
-      <div class="book-cover reveal">
-        <div class="bc-series">THE MODERN RELATIONSHIPS SERIES · BOOK ONE</div>
-        <div class="bc-title">MODERN WOMEN,<br>MODERN MEN,<br><span class="r">MODERN PROBLEMS</span></div>
-        <div class="bc-sub">What Actually Happened to the Way We Love</div>
-        <div class="bc-auth">ADRIAN WOLFE</div>
+    <div class="sec-head reveal"><span class="num">02</span><h2>Listen now</h2></div>
+    <p class="sec-intro reveal">Short enough for a walk. Each one stands alone. Press play and start anywhere.</p>
+    <div class="eps">
+      <a class="ep reveal" href="listen.html" style="text-decoration:none;color:inherit"><div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="ep-body"><h4>The War That Was Installed</h4><p>The one idea everything is built on.</p></div><span class="ep-for all">Everyone</span><span class="ep-len">6 min</span></a>
+      <a class="ep reveal" href="listen.html" style="text-decoration:none;color:inherit"><div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="ep-body"><h4>What the Apps Optimise For</h4><p>A match found is a customer lost.</p></div><span class="ep-for young">20s track</span><span class="ep-len">7 min</span></a>
+      <a class="ep reveal" href="listen.html" style="text-decoration:none;color:inherit"><div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="ep-body"><h4>The Divorce Myth That Won't Die</h4><p>The 50% figure is a statistical error.</p></div><span class="ep-for older">40s track</span><span class="ep-len">7 min</span></a>
+      <a class="ep reveal" href="listen.html" style="text-decoration:none;color:inherit"><div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="ep-body"><h4>The Loneliness Behind the Highlight Reel</h4><p>Most connected, least connected.</p></div><span class="ep-for young">20s track</span><span class="ep-len">7 min</span></a>
+      <a class="ep reveal" href="listen.html" style="text-decoration:none;color:inherit"><div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="ep-body"><h4>The Men Who Went Quiet</h4><p>Both loud explanations are wrong.</p></div><span class="ep-for all">Everyone</span><span class="ep-len">8 min</span></a>
+      <a class="ep reveal" href="listen.html" style="text-decoration:none;color:inherit"><div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="ep-body"><h4>Marriage Was Built for a World That's Gone</h4><p>A mismatch, not a failure.</p></div><span class="ep-for older">40s track</span><span class="ep-len">7 min</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- THESIS -->
+<div class="thesis">
+  <div class="wrap">
+    <div class="thesis-card reveal">
+      <p class="q">“The algorithm is not a misogynist or a misandrist. <b>It is an accountant.</b> Conflict converts better than peace — so it serves you conflict, and calls it your own opinion.”</p>
+      <p class="attr mono">— Adrian T. Wolfe</p>
+    </div>
+  </div>
+</div>
+
+<!-- SERIES -->
+<section id="series">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">03</span><h2>The Modern Relationships Series</h2></div>
+    <p class="sec-intro reveal">Ten books, one argument. Now in audio — listen on your commute, read when you want to go deep. Start with Book One, or jump to the chapter of life you're living.</p>
+    <div class="paths">
+      <div class="path reveal">
+        <div class="tag">The whole picture</div>
+        <h3>Read or listen, in order</h3>
+        <p>Begins with the thesis and builds across attention, independence, marriage, withdrawal, and what we've traded away — resolving on what we rebuild now.</p>
+        <a class="go" href="books.html">Get Book One →</a>
       </div>
-      <div class="reveal">
-        <h2>Modern Women, Modern Men, Modern Problems</h2>
-        <div class="bsub">What Actually Happened to the Way We Love</div>
-        <p>Everyone has a theory about why dating is broken. Almost all of them are wrong. Drawing on research from Pew, the U.S. Census, and leading social scientists, this is the book that refuses to give you a villain — and gives you an accurate picture instead.</p>
-        <p>Why marriage is declining even as divorce falls. Why the "male loneliness epidemic" is both real and a myth. How young men and women became two cultures. What each sex has genuinely lost — stated with equal honesty.</p>
-        <div class="cta-row" style="margin-top:24px">
-          <a href="https://www.amazon.com/" class="btn" target="_blank" rel="noopener">Amazon Page</a>
-          <a href="series.html" class="btn ghost">Explore the Series</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DATA / CREDIBILITY -->
-<section id="data" style="background:var(--paper-2)">
-  <div class="wrap">
-    <div class="sec-head reveal"><span class="num">04</span><h2>Grounded in the Data</h2></div>
-    <div class="data-grid">
-      <div class="stat reveal"><div class="big">~5.8</div><div class="lab">U.S. marriages per 1,000 people projected for 2025 — down from 6.2 in 2022.</div><div class="src">IBISWorld</div></div>
-      <div class="stat reveal"><div class="big">~40%</div><div class="lab">First-marriage divorce risk — not the "50%" myth so often repeated.</div><div class="src">IFS / APA / Pew</div></div>
-      <div class="stat reveal"><div class="big">16 / 15</div><div class="lab">Percent of men vs. women reporting frequent loneliness — a gap of one point.</div><div class="src">Pew Research, 2025</div></div>
-      <div class="stat reveal"><div class="big">~51 pt</div><div class="lab">The gender gap among under-30 voters in 2024 — the widest of any age group.</div><div class="src">NYT / Siena</div></div>
-      <div class="stat reveal"><div class="big">2.2×</div><div class="lab">How much more unpaid household and care work U.S. women do than men.</div><div class="src">GEPI, 2024</div></div>
-      <div class="stat reveal"><div class="big">#1</div><div class="lab">Meeting online is now the single most common way U.S. couples meet.</div><div class="src">Rosenfeld, PNAS</div></div>
-    </div>
-    <p class="data-note reveal">Every claim is sourced. When the data complicates the argument — as the loneliness numbers do — it goes in anyway. That is the difference between analysis and grievance.</p>
-  </div>
-</section>
-
-<!-- BLOG / SUPPORTERS -->
-<section id="library">
-  <div class="wrap">
-    <div class="sec-head reveal"><span class="num">05</span><h2>Read More</h2></div>
-    <div class="feature-links">
-      <a class="feature-link reveal" href="blog/index.html"><div class="tag">Blog</div><h3>Dad's Notes</h3><p>A simple place for new posts, updates, and shorter reflections that do not need to become full essays.</p><span>Open Blog</span></a>
-      <a class="feature-link reveal" href="supporters/index.html"><div class="tag">Supporters</div><h3>Private Articles</h3><p>An encrypted reading room for supporter-only articles unlocked with the passphrase sent to subscribers.</p><span>Subscriber Login</span></a>
-      <a class="feature-link reveal" href="series.html"><div class="tag">Series</div><h3>The Books</h3><p>A full page explaining the Modern Relationships Series and where each book fits in the argument.</p><span>View Series</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <div class="sec-head reveal"><span class="num">06</span><h2>About Adrian Wolfe</h2></div>
-    <div class="about-grid">
-      <div class="about-mark reveal">A<span>W</span></div>
-      <div class="reveal">
-        <p class="lead">Adrian Wolfe writes about love, identity, and connection in the digital age.</p>
-        <p>Combining social research with cultural criticism, his work examines how modern incentives — dating apps, social media, the attention economy — reshaped the way we relate to one another.</p>
-        <p>He argues that the crisis in modern relationships is not a war between the sexes, but a shared casualty of the systems we all live inside. His method is simple: observe honestly, cite the evidence, and refuse to blame people for responding rationally to broken incentives.</p>
+      <div class="path reveal">
+        <div class="tag">Audio-first</div>
+        <h3>For the people always moving</h3>
+        <p>The full series, AI-narrated in one calm voice, built for walking, driving, training, travelling. The voice of reason in your ears, wherever you are.</p>
+        <a class="go" href="listen.html">Hear a sample →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section id="subscribe" class="news">
-  <div class="wrap reveal">
-    <div class="mono" style="color:#e9b949;margin-bottom:22px">Join the Letter</div>
-    <h2>One honest essay on modern love, every week.</h2>
-    <p>Data, cultural criticism, and the occasional uncomfortable truth — in your inbox. No outrage. No noise. Unsubscribe anytime.</p>
-    <form class="newsletter-form" action="https://adrianwolfe.us5.list-manage.com/subscribe/post?u=648a128898b01b8ab0ea2d1b4&amp;id=8f95249312&amp;f_id=00c5b9edf0" method="post" target="_blank" data-newsletter-form>
-      <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address">
-      <input type="hidden" name="tags" value="4541314,4541313">
-      <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_648a128898b01b8ab0ea2d1b4_8f95249312" tabindex="-1" value=""></div>
-      <button class="btn" type="submit">Subscribe Free</button>
-    </form>
-    <div class="form-note">After subscribing, check your inbox for Adrian Wolfe's confirmation email.</div>
-    <div class="form-status" aria-live="polite" data-form-status></div>
-    <div class="fine">This is not a war. It never was.</div>
+<!-- SUBSCRIBE -->
+<section id="subscribe">
+  <div class="wrap">
+    <div class="sub-box reveal">
+      <h2>Become a regular</h2>
+      <p>A new essay every week, the latest audio first, and the next book before anywhere else. Free, and it takes ten seconds. This is where the conversation lives.</p>
+      <a class="sub-btn" href="https://adriantwolfe.substack.com/subscribe" target="_blank" rel="noopener">Subscribe free on Substack →</a>
+      <p class="sub-fine">No outrage. No spam. Unsubscribe anytime.</p>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="brand">ADRIAN<span style="color:var(--accent)">·</span>WOLFE</div>
-    <div class="fnav">
-      <a href="#essays">Essays</a><a href="#podcast">Podcast</a><a href="blog/index.html">Blog</a><a href="series.html">Series</a><a href="supporters/index.html">Supporters</a><a href="#about">About</a><a href="#subscribe">Subscribe</a>
+    <a class="brand serif" href="index.html">ADRIAN T. <b style="color:var(--ox)">WOLFE</b></a>
+    <p>Not a war between men and women — but what happened to both of them inside an economy that profits from their loneliness.</p>
+    <div class="flinks">
+      <a href="listen.html">Listen</a>
+      <a href="books.html">The Books</a>
+      <a href="about.html">About</a>
+      <a href="https://adriantwolfe.substack.com/subscribe" target="_blank" rel="noopener">Subscribe</a>
+      <a href="https://adriantwolfe.substack.com" target="_blank" rel="noopener">Substack</a>
     </div>
-    <div class="socials" aria-label="Social links">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://x.com/" target="_blank" rel="noopener">X</a>
-    </div>
-    <div class="mono">The Modern Relationships Series · © 2026</div>
+    <p style="margin-top:20px;opacity:.85">© 2026 Adrian T. Wolfe · adrianwolfe.com</p>
   </div>
 </footer>
 
 <script>
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1});
-document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%6*55)+'ms';io.observe(el);});
-document.querySelectorAll('[data-newsletter-form]').forEach((form)=>{
-  const status=form.parentElement.querySelector('[data-form-status]');
-  form.addEventListener('submit',()=>{
-    const button=form.querySelector('.btn');
-    if(button) button.textContent='Check Your Email';
-    if(status) status.textContent='Almost there. Check your inbox for the confirmation email.';
+  document.body.classList.add('js-anim');
+  // reveal on scroll
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // hero play button — visual demo (wire to real audio embed when ready)
+  const hp=document.getElementById('heroPlay');
+  hp.addEventListener('click',()=>{
+    hp.classList.toggle('playing');
+    const sub=hp.querySelector('.pm-sub');
+    if(hp.classList.contains('playing')){sub.textContent='Now playing — connect your audio host';}
+    else{sub.textContent='“The War That Was Installed” · 6 min';}
   });
-});
+  // episode rows — same demo behaviour
+  document.querySelectorAll('.ep').forEach(ep=>{
+    ep.addEventListener('click',()=>{
+      document.querySelectorAll('.ep').forEach(o=>{if(o!==ep)o.style.background=''});
+      ep.style.background='rgba(232,99,74,.12)';
+    });
+  });
 </script>
 </body>
 </html>
