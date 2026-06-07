@@ -1,149 +1,249 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<!-- BEFORE GOING LIVE: replace https://adriantwolfe.substack.com (Substack URL) everywhere. Save filenames as-is and upload all pages together. -->
+<!DOCTYPE html><html lang="en"><head>
+<!-- Email signups are connected to the Adrian T. Wolfe MailerLite form. -->
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Listen — Adrian T. Wolfe</title><meta name="description" content="Essays and audio on modern love, dating, marriage and loneliness — calm, data-driven, for your commute or your walk.">
+<title>Read — Adrian T. Wolfe</title>
+<meta name="description" content="Essays on modern love, dating, marriage and loneliness — calm, data-driven, no sides. A new essay opens every week. Audio coming soon.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0e0c0a;--ink2:#16130f;--paper:#f4efe6;--paper-dim:#cdbfa0;--ox:#e8634a;--ox-deep:#b8402a;--gold:#c9a24a;--grey:#c9bda6;--maxw:1180px;--serif:'Fraunces',Georgia,serif;--sans:'Archivo',system-ui,sans-serif}
+:root{--ink:#0e0c0a;--paper:#f4efe6;--paper-dim:#cdbfa0;--ox:#e8634a;--gold:#c9a24a;--grey:#c9bda6;--maxw:1180px;--serif:'Fraunces',Georgia,serif;--sans:'Archivo',system-ui,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{background:var(--ink);color:var(--paper);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-::selection{background:var(--ox);color:var(--ink)}a{color:inherit;text-decoration:none}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}.serif{font-family:var(--serif)}
-.mono{font-family:var(--sans);letter-spacing:.22em;text-transform:uppercase;font-size:.7rem;font-weight:600}
-body::before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.glow{position:fixed;border-radius:50%;filter:blur(120px);opacity:.5;z-index:0;pointer-events:none}
-.glow.a{width:600px;height:600px;background:radial-gradient(circle,#6e241688,transparent 70%);top:-200px;right:-150px}
-nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);background:rgba(14,12,10,.72);border-bottom:1px solid rgba(201,162,74,.16)}
+a{color:inherit;text-decoration:none}::selection{background:var(--ox);color:var(--ink)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.glow{position:fixed;border-radius:50%;filter:blur(120px);opacity:.5;z-index:0;pointer-events:none;width:600px;height:600px;background:radial-gradient(circle,#6e241688,transparent 70%);top:-200px;right:-150px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);background:rgba(14,12,10,.8);border-bottom:1px solid rgba(201,162,74,.16)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{font-family:var(--serif);font-weight:900;font-size:1.15rem;letter-spacing:.04em;word-spacing:.12em}.brand b{color:var(--ox)}
-.navlinks{display:flex;gap:30px;align-items:center}.navlinks a{font-size:.82rem;font-weight:500;color:var(--grey);transition:color .2s}.navlinks a:hover,.navlinks a.active{color:var(--paper)}
-.nav-cta{background:var(--ox);color:var(--ink)!important;padding:9px 18px;border-radius:100px;font-weight:700;font-size:.8rem}.nav-cta:hover{background:var(--paper)}
-@media(max-width:760px){.navlinks a:not(.nav-cta){display:none}}
-.phead{position:relative;z-index:2;padding:128px 0 30px}
-.phead .mono{color:var(--gold);margin-bottom:16px}
-.phead h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.4rem,6vw,4rem);line-height:1.04;letter-spacing:-.02em;max-width:18ch}
-.phead p.lead{color:var(--paper-dim);max-width:56ch;margin-top:20px;font-size:1.1rem}
-section{position:relative;z-index:2;padding:40px 0 70px}
-footer{position:relative;z-index:2;border-top:1px solid rgba(201,162,74,.14);padding:46px 0;text-align:center;margin-top:40px}
-footer .brand{font-size:1.4rem;margin-bottom:10px;display:inline-block}footer p{color:var(--grey);font-size:.82rem;max-width:50ch;margin:0 auto 8px}
-footer .flinks{display:flex;gap:22px;justify-content:center;margin-top:18px;flex-wrap:wrap}footer .flinks a{font-size:.82rem;color:var(--paper-dim)}footer .flinks a:hover{color:var(--ox)}
-.btn{display:inline-block;background:var(--ox);color:var(--ink);font-weight:800;padding:15px 32px;border-radius:100px;transition:transform .25s,background .2s}.btn:hover{transform:translateY(-3px);background:var(--paper)}
-</style></head><body>
-<div class="glow a"></div>
-<style>
-.filters{display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap}
-.filt{font-size:.78rem;font-weight:700;padding:8px 16px;border-radius:100px;border:1px solid rgba(201,162,74,.3);color:var(--paper-dim);cursor:pointer;background:none;font-family:var(--sans);transition:all .2s}
-.filt:hover{border-color:var(--ox)}.filt.on{background:var(--ox);color:var(--ink);border-color:var(--ox)}
-.eps{display:flex;flex-direction:column;gap:2px}
-.ep{display:flex;align-items:center;gap:18px;padding:18px 16px;border-radius:12px;transition:background .2s;border:1px solid transparent}
+.navlinks{display:flex;gap:30px;align-items:center}.navlinks a{font-size:.82rem;font-weight:500;color:var(--grey)}.navlinks a:hover,.navlinks a.active{color:var(--paper)}
+.nav-cta{background:var(--ox);color:var(--ink)!important;padding:9px 18px;border-radius:100px;font-weight:700;font-size:.8rem}
+@media(max-width:680px){.navlinks a:not(.nav-cta){display:none}}
+.phead{position:relative;z-index:2;padding:128px 0 10px}
+.phead .mono{font-family:var(--sans);letter-spacing:.2em;text-transform:uppercase;font-size:.7rem;font-weight:600;color:var(--gold);margin-bottom:14px}
+.phead h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.2rem,5vw,3.4rem);letter-spacing:-.02em}
+.phead p.lead{color:var(--paper-dim);max-width:58ch;margin-top:16px;font-size:1.05rem}
+section{position:relative;z-index:2;padding:20px 0 60px}
+.note{background:rgba(34,28,22,.5);border:1px solid rgba(201,162,74,.2);border-radius:12px;padding:14px 18px;margin:18px 0 22px;font-size:.86rem;color:var(--paper-dim)}.note b{color:var(--paper)}
+.filters{display:flex;gap:9px;margin-bottom:22px;flex-wrap:wrap}
+.filt{font-size:.76rem;font-weight:700;padding:8px 15px;border-radius:100px;border:1px solid rgba(201,162,74,.3);color:var(--paper-dim);cursor:pointer;background:none;font-family:var(--sans)}
+.filt.on{background:var(--ox);color:var(--ink);border-color:var(--ox)}
+.eps{display:flex;flex-direction:column;gap:4px}
+.ep{display:flex;gap:18px;padding:18px 16px;border-radius:12px;transition:background .2s;border:1px solid transparent;align-items:flex-start}
 .ep:hover{background:rgba(34,28,22,.6);border-color:rgba(201,162,74,.18)}
-.ep-play{width:42px;height:42px;flex:none;border-radius:50%;border:1.5px solid var(--ox);display:grid;place-items:center;transition:background .2s}
-.ep:hover .ep-play{background:var(--ox)}.ep-play svg{width:13px;height:13px;fill:var(--ox);margin-left:2px;transition:fill .2s}.ep:hover .ep-play svg{fill:var(--ink)}
-.ep-body{flex:1;min-width:0}.ep-body h4{font-family:var(--serif);font-size:1.08rem;font-weight:600}
-.ep-for{font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;flex:none}
-.ep-for.young{background:rgba(232,99,74,.14);color:var(--ox)}.ep-for.older{background:rgba(201,162,74,.14);color:var(--gold)}.ep-for.all{background:rgba(244,239,230,.1);color:var(--paper-dim)}
-.ep-len{font-size:.76rem;color:var(--grey);flex:none}@media(max-width:620px){.ep-len{display:none}}
-.note{background:rgba(34,28,22,.5);border:1px solid rgba(201,162,74,.2);border-radius:12px;padding:16px 20px;margin-bottom:26px;font-size:.88rem;color:var(--paper-dim)}
-.note b{color:var(--paper)}
-</style>
-<nav><div class="wrap">
-<a class="brand" href="index.html">ADRIAN T. <b>WOLFE</b></a>
-<div class="navlinks">
-<a href="listen.html" class="active">Listen</a>
-<a href="books.html" class="">The Books</a>
-<a href="about.html" class="">About</a>
-<a href="https://adriantwolfe.substack.com/subscribe" target="_blank" rel="noopener" class="nav-cta">Subscribe free</a>
-</div></div></nav>
-<div class="phead"><div class="wrap"><div class="mono">For the walk, the commute, everywhere</div>
-<h1>Listen &amp; read</h1>
-<p class="lead">Short pieces, each one standing alone. Calm, data-driven, no sides. Filter by where you are in the story — or just start at the top.</p></div></div>
+.ep-num{font-family:var(--serif);font-size:1.1rem;color:var(--gold);font-weight:600;flex:none;width:34px;text-align:center;padding-top:2px}
+.ep-body{flex:1;min-width:0}.ep-body h4{font-family:var(--serif);font-size:1.14rem;font-weight:600;margin-bottom:4px}
+.ep-prev{font-size:.86rem;color:var(--grey);margin-bottom:7px;line-height:1.5}
+.ep-status{font-size:.72rem;font-weight:700}
+.ep-status.open{color:#7bdc9a}.ep-status.soon{color:var(--gold)}
+.ep-side{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:6px;min-width:96px}
+.ep-for{font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:100px}
+.ep-for.young{background:rgba(232,99,74,.16);color:var(--ox)}.ep-for.older{background:rgba(201,162,74,.16);color:var(--gold)}.ep-for.all{background:rgba(244,239,230,.1);color:var(--paper-dim)}
+.ep-len{font-size:.74rem;color:var(--grey)}
+.ep-audio{font-size:.66rem;color:var(--grey);opacity:.8}
+@media(max-width:620px){.ep-side{min-width:auto}.ep-len{display:none}}
+.endcap{background:linear-gradient(150deg,rgba(46,36,28,.7),rgba(20,16,12,.5));border:1px solid rgba(201,162,74,.25);border-radius:18px;padding:36px;text-align:center;margin-top:30px}
+.endcap h3{font-family:var(--serif);font-size:1.5rem;margin-bottom:10px}.endcap p{color:var(--paper-dim);font-size:.96rem;margin-bottom:18px;max-width:46ch;margin-left:auto;margin-right:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.ml-signup{position:relative;max-width:720px;margin:0 auto}
+.ml-signup-form{display:grid;grid-template-columns:1fr 1.35fr auto;gap:10px;align-items:center}
+.ml-signup .ml-field-group{min-width:0}
+.ml-signup input[type="text"],.ml-signup input[type="email"]{width:100%;min-width:0;padding:13px 17px;border-radius:100px;border:1px solid rgba(201,162,74,.4);background:rgba(14,12,10,.66);color:var(--paper);font-family:var(--sans);font-size:.95rem;outline:none}.ml-signup input::placeholder{color:var(--grey)}.ml-signup input:focus{border-color:var(--ox);box-shadow:0 0 0 3px rgba(232,99,74,.14)}
+.ml-signup button.primary{background:var(--ox);color:var(--ink);font-weight:800;padding:13px 25px;border-radius:100px;border:none;cursor:pointer;font-family:var(--sans);font-size:.95rem;white-space:nowrap}.ml-signup button.primary:hover{background:var(--paper)}
+.ml-signup .ml-consent{grid-column:1/-1;display:flex;align-items:flex-start;justify-content:center;gap:9px;color:var(--paper-dim);font-size:.76rem;cursor:pointer;margin-top:4px}.ml-signup .ml-consent input{accent-color:var(--ox);margin-top:3px}
+.ml-signup .ml-error input{border-color:var(--ox)!important}
+.ml-signup .loading{grid-column:3;display:none}.ml-form-embedSubmitLoad{display:inline-block;width:18px;height:18px;border:3px solid var(--ink);border-right-color:transparent;border-radius:50%;animation:ml-spin .8s linear infinite}
+.ml-signup .row-success h4{font-family:var(--serif);font-size:1.45rem;color:var(--paper);margin-bottom:5px}.ml-signup .row-success p{margin:0 auto;color:var(--paper-dim)}
+@keyframes ml-spin{to{transform:rotate(360deg)}}@media(max-width:720px){.ml-signup-form{grid-template-columns:1fr}.ml-signup button.primary,.ml-signup .loading{grid-column:1;width:100%}.ml-signup .ml-consent{grid-column:1}}
+footer{position:relative;z-index:2;border-top:1px solid rgba(201,162,74,.14);padding:44px 0;text-align:center;margin-top:40px}
+footer p{color:var(--grey);font-size:.82rem;margin:0 auto 8px;max-width:50ch}footer .flinks{display:flex;gap:22px;justify-content:center;margin-top:16px;flex-wrap:wrap}footer .flinks a{font-size:.82rem;color:var(--paper-dim)}
+</style></head><body>
+<div class="glow"></div>
+<nav><div class="wrap"><a class="brand" href="index.html">ADRIAN T. <b>WOLFE</b></a>
+<div class="navlinks"><a href="listen.html" class="active">Read</a><a href="books.html">The Books</a><a href="about.html">About</a>
+<a href="#subscribe" class="nav-cta">Subscribe free</a></div></div></nav>
+<div class="phead"><div class="wrap"><div class="mono">A new essay every week</div>
+<h1>Read</h1>
+<p class="lead">Short essays — calm, data-driven, no sides. A new one opens every week. Read free; just add your email to follow along.</p></div></div>
 <section><div class="wrap">
-<div class="note">🎧 <b>Audio is on the way.</b> Every piece below is published as an essay now, with narrated audio rolling out across Spotify, Apple, and the newsletter. Tap any title to read it today and subscribe to get the audio first.</div>
+<div class="note">🎧 <b>Audio coming soon.</b> Read every essay now; one new essay opens each week.</div>
 <div class="filters"><button class="filt on" data-f="all">All</button><button class="filt" data-f="20s">20s track</button><button class="filt" data-f="40s">40s track</button><button class="filt" data-f="Everyone">Everyone</button></div>
-<div class="eps" id="eps"><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The War That Was Installed</h4></div>
-<span class="ep-for all">Everyone</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Person in Front of You Cannot Compete with a Feed</h4></div>
-<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Men Who Went Quiet</h4></div>
-<span class="ep-for all">Everyone</span><span class="ep-len">8 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Relationship You Perform Is Not the One You Have</h4></div>
-<span class="ep-for older">40s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>You Are Not the Customer</h4></div>
-<span class="ep-for all">Everyone</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Myth of Not Needing Anyone</h4></div>
-<span class="ep-for young">20s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Slogan and the Statistics</h4></div>
-<span class="ep-for young">20s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>What the Apps Optimise For</h4></div>
-<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Half-Life of a Match</h4></div>
-<span class="ep-for young">20s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>Dopamine Is Not the Villain You Think</h4></div>
-<span class="ep-for all">Everyone</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Disappearing Offstage</h4></div>
-<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Second Shift Is a Logistics Problem</h4></div>
-<span class="ep-for older">40s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>Why "I Don't Need a Man" Became Mandatory</h4></div>
-<span class="ep-for young">20s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Loneliness Behind the Highlight Reel</h4></div>
-<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Closed World We Lost</h4></div>
-<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>Grievance Is a Business Model</h4></div>
-<span class="ep-for all">Everyone</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Self That Is Always Editing</h4></div>
-<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>Marriage Was Built for a World That No Longer Exists</h4></div>
-<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Surveillance We Volunteered For</h4></div>
-<span class="ep-for older">40s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>What "Sacred" Actually Meant</h4></div>
-<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>Strength Has Room for Need</h4></div>
-<span class="ep-for all">Everyone</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Divorce Myth That Won't Die</h4></div>
-<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>The Self Underneath the Feed</h4></div>
-<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
-<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-<div class="ep-body"><h4>What We Build Now</h4></div>
-<span class="ep-for all">Everyone</span><span class="ep-len">8 min</span></a></div>
+<div class="eps" id="eps"><a class="ep" href="essay-1.html" data-n="1" data-grp="Everyone" data-open="2026-06-07">
+<div class="ep-num">01</div>
+<div class="ep-body"><h4>The War That Was Installed</h4>
+<p class="ep-prev">There is a particular kind of conversation that happens online every day, millions of times, in slightly different costumes. A woman describes a frustration — men won&#x27;t commit, men won&#x27;t grow up, men have checked out — and a chorus agrees. A man describes a mirror-image frustration — women are impossible to please,…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for all">Everyone</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-2.html" data-n="2" data-grp="20s" data-open="2026-06-14">
+<div class="ep-num">02</div>
+<div class="ep-body"><h4>The Person in Front of You Cannot Compete with a Feed</h4>
+<p class="ep-prev">Here is a small experiment you have almost certainly run without meaning to. You are with someone — a partner, a date, a friend — and there is a lull. You reach for your phone. In the thirty seconds before you look up again, you have seen perhaps a dozen other people: a couple on a perfect holiday, someone&#x27;s…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for young">20s</span><span class="ep-len">7 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-3.html" data-n="3" data-grp="Everyone" data-open="2026-06-21">
+<div class="ep-num">03</div>
+<div class="ep-body"><h4>The Men Who Went Quiet</h4>
+<p class="ep-prev">There is a story you have heard about men, and it comes in two versions, and they are both wrong in the same way.</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for all">Everyone</span><span class="ep-len">8 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-4.html" data-n="4" data-grp="40s" data-open="2026-06-28">
+<div class="ep-num">04</div>
+<div class="ep-body"><h4>The Relationship You Perform Is Not the One You Have</h4>
+<p class="ep-prev">There is a couple you have seen, even if you have never met them. They appear on your feed looking effortlessly close — the anniversary tribute, the holiday two-shot, the caption that says my person, my best friend, my everything. They look like the thing the rest of us are supposed to be aiming at. And then,…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for older">40s</span><span class="ep-len">7 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-5.html" data-n="5" data-grp="Everyone" data-open="2026-07-05">
+<div class="ep-num">05</div>
+<div class="ep-body"><h4>You Are Not the Customer</h4>
+<p class="ep-prev">There is an old line, sharpened over the years by various people, that has become the single most useful sentence for understanding modern life: if you are not paying for the product, you are the product. It is worth slowing down on, because most people nod at it and then carry on behaving as though it were not…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for all">Everyone</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-6.html" data-n="6" data-grp="20s" data-open="2026-07-12">
+<div class="ep-num">06</div>
+<div class="ep-body"><h4>The Myth of Not Needing Anyone</h4>
+<p class="ep-prev">There is a sentence that has become a kind of secular prayer, repeated in captions and song lyrics and self-help and ordinary conversation until it sounds like simple common sense: I don&#x27;t need anyone. It arrives in many costumes — I&#x27;m focusing on myself, I don&#x27;t depend on anyone, I learned to be my own everything…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for young">20s</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-7.html" data-n="7" data-grp="20s" data-open="2026-07-19">
+<div class="ep-num">07</div>
+<div class="ep-body"><h4>The Slogan and the Statistics</h4>
+<p class="ep-prev">Spend an hour in the part of the internet aimed at women and you will come away with a clear message, repeated in a thousand confident variations: she is thriving. She is her own queen, she needs no one, she has chosen herself, she is unbothered and glowing and free. The slogans are everywhere, and they are…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for young">20s</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-8.html" data-n="8" data-grp="20s" data-open="2026-07-26">
+<div class="ep-num">08</div>
+<div class="ep-body"><h4>What the Apps Optimise For</h4>
+<p class="ep-prev">If you have used a dating app and come away feeling slightly worse — about yourself, about the people on it, about the whole enterprise of meeting someone — I want to offer you a reframe that is not consoling but is, I think, clarifying. The experience was not a malfunction. The frustration was not a bug you could…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for young">20s</span><span class="ep-len">7 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-9.html" data-n="9" data-grp="20s" data-open="2026-08-02">
+<div class="ep-num">09</div>
+<div class="ep-body"><h4>The Half-Life of a Match</h4>
+<p class="ep-prev">You have probably lived this small, deflating story. A match, a good one. The conversation crackles for a day, maybe two. There is wit, there is momentum, there is the faint lift of maybe this one. And then — nothing dramatic, no falling-out, no rejection — it simply cools. The replies slow. The energy leaks out.…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for young">20s</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-10.html" data-n="10" data-grp="Everyone" data-open="2026-08-09">
+<div class="ep-num">10</div>
+<div class="ep-body"><h4>Dopamine Is Not the Villain You Think</h4>
+<p class="ep-prev">You have heard the story so many times it now passes for common knowledge. Your phone, the apps, the feeds — they are giving you little &quot;hits of dopamine,&quot; the brain&#x27;s pleasure chemical, and that is why you keep coming back, chasing the next pleasurable jolt like a rat pressing a lever. It is a tidy story. It is…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for all">Everyone</span><span class="ep-len">7 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-11.html" data-n="11" data-grp="40s" data-open="2026-08-16">
+<div class="ep-num">11</div>
+<div class="ep-body"><h4>The Disappearing Offstage</h4>
+<p class="ep-prev">Think about the difference between how you behave at a dinner party and how you behave alone in your kitchen at midnight. At the dinner party you are, in a mild and entirely normal way, performing — presenting a version of yourself, managing impressions, being on. In the kitchen at midnight you are not. You are…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for older">40s</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-12.html" data-n="12" data-grp="40s" data-open="2026-08-23">
+<div class="ep-num">12</div>
+<div class="ep-body"><h4>The Second Shift Is a Logistics Problem, Not a Referendum</h4>
+<p class="ep-prev">There is a fight that happens in a great many households, and it tends to go badly in a particular, recognisable way. It starts with something concrete — the washing, the school forms, the mental list of what is running low — and within minutes it has escalated into something enormous: a referendum on whether one…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for older">40s</span><span class="ep-len">7 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-13.html" data-n="13" data-grp="20s" data-open="2026-08-30">
+<div class="ep-num">13</div>
+<div class="ep-body"><h4>Why &quot;I Don&#x27;t Need a Man&quot; Became Mandatory</h4>
+<p class="ep-prev">There is a declaration that has become almost compulsory in certain corners of the culture, recited in captions and lyrics and bios with the regularity of a loyalty oath: I don&#x27;t need a man. Or, in its mirror version aimed at men: I don&#x27;t need a woman, I&#x27;m focused on myself, I don&#x27;t chase, I provide for me. On the…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for young">20s</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-14.html" data-n="14" data-grp="20s" data-open="2026-09-06">
+<div class="ep-num">14</div>
+<div class="ep-body"><h4>The Loneliness Behind the Highlight Reel</h4>
+<p class="ep-prev">Here is a paradox that ought to be more disturbing than it is, because we have grown used to it. By every measure of connectivity, this is the most connected era in human history: more contacts, more messages, more followers, more ways to reach more people more instantly than any generation before us. And by most…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for young">20s</span><span class="ep-len">7 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-15.html" data-n="15" data-grp="40s" data-open="2026-09-13">
+<div class="ep-num">15</div>
+<div class="ep-body"><h4>The Closed World We Lost</h4>
+<p class="ep-prev">For most of human history, a marriage took place inside a closed world. Not a prison — though it could become one, and for many it did — but a bounded space, walled off from constant comparison and outside scrutiny, where two people built something that only they could fully see. The neighbours knew you were…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for older">40s</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-16.html" data-n="16" data-grp="Everyone" data-open="2026-09-20">
+<div class="ep-num">16</div>
+<div class="ep-body"><h4>Grievance Is a Business Model</h4>
+<p class="ep-prev">There is a thriving industry you have almost certainly encountered, whether or not you have a name for it. It speaks to men about how women have wronged them, or to women about how men have failed them, and it does so with apparent sympathy, fluency, and conviction. It names your pain accurately. It tells you it is…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for all">Everyone</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-17.html" data-n="17" data-grp="20s" data-open="2026-09-27">
+<div class="ep-num">17</div>
+<div class="ep-body"><h4>The Self That Is Always Editing</h4>
+<p class="ep-prev">Notice, next time something genuinely good happens to you, how quickly a second process starts up underneath the experience. You are at the dinner, the view, the moment with someone you love — and somewhere in the background a quiet editor wakes up and begins to assess: is this shareable? what&#x27;s the caption? which…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for young">20s</span><span class="ep-len">7 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-18.html" data-n="18" data-grp="40s" data-open="2026-10-04">
+<div class="ep-num">18</div>
+<div class="ep-body"><h4>Marriage Was Built for a World That No Longer Exists</h4>
+<p class="ep-prev">When people argue about whether marriage is &quot;failing,&quot; they almost always argue about the wrong thing. They debate whether people have become too selfish, too uncommitted, too distracted — as if the institution were a fixed thing and only the people inside it had changed. I want to suggest the opposite framing,…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for older">40s</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-19.html" data-n="19" data-grp="40s" data-open="2026-10-11">
+<div class="ep-num">19</div>
+<div class="ep-body"><h4>The Surveillance We Volunteered For</h4>
+<p class="ep-prev">Here is a capability that would have seemed like science fiction, or a nightmare, to almost everyone who ever lived before us: you can now know, at most moments, roughly where your partner is, whether they have read your message, when they were last online, who they follow, what they like, and what they were doing…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for older">40s</span><span class="ep-len">7 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-20.html" data-n="20" data-grp="40s" data-open="2026-10-18">
+<div class="ep-num">20</div>
+<div class="ep-body"><h4>What &quot;Sacred&quot; Actually Meant</h4>
+<p class="ep-prev">I want to rescue a word, carefully, because it has been so badly misused that most people flinch at it — and in flinching, miss something they are genuinely missing. The word is sacred, as in the idea that some things about a person are sacred. For a long time that word was a weapon: used to tell people, women…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for older">40s</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-21.html" data-n="21" data-grp="Everyone" data-open="2026-10-25">
+<div class="ep-num">21</div>
+<div class="ep-body"><h4>Strength Has Room for Need</h4>
+<p class="ep-prev">Somewhere along the way, a quiet redefinition happened, and almost nobody objected to it. Strength got redefined as self-sufficiency — as the capacity to need no one, depend on nothing, carry everything alone. And its opposite, need, got filed under weakness: the embarrassing condition of requiring other people, to…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for all">Everyone</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-22.html" data-n="22" data-grp="40s" data-open="2026-11-01">
+<div class="ep-num">22</div>
+<div class="ep-body"><h4>The Divorce Myth That Won&#x27;t Die</h4>
+<p class="ep-prev">Almost everyone knows the figure. Half of all marriages end in divorce — so commonly repeated that it functions as settled fact, the grim backdrop against which people approach commitment, the number that makes marriage look like a coin toss. It shows up in conversations, in articles, in the quiet calculations…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for older">40s</span><span class="ep-len">6 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-23.html" data-n="23" data-grp="20s" data-open="2026-11-08">
+<div class="ep-num">23</div>
+<div class="ep-body"><h4>The Self Underneath the Feed</h4>
+<p class="ep-prev">If you have spent years inside the validation economy — performing, comparing, editing, broadcasting, watching the metrics — you may have felt, at some point, a quiet and disturbing question surface: is there still a me underneath all this, or have I become the performance? It is a real fear, and a common one, and…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for young">20s</span><span class="ep-len">7 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a><a class="ep" href="essay-24.html" data-n="24" data-grp="Everyone" data-open="2026-11-15">
+<div class="ep-num">24</div>
+<div class="ep-body"><h4>What We Build Now</h4>
+<p class="ep-prev">When I started writing about all of this — the loneliness, the comparison, the withdrawal, the performance, the grievance, the surveillance — I worried that the cumulative effect would be despair. Essay after essay naming another way the systems we live inside have made love and connection harder. Read end to end,…</p>
+<div class="ep-status" data-role="status"></div></div>
+<div class="ep-side"><span class="ep-for all">Everyone</span><span class="ep-len">8 min read</span><span class="ep-audio">🎧 audio coming soon</span>
+</div></a></div>
+<div class="endcap" id="subscribe"><h3>Read every essay, free</h3>
+<p>One new essay opens each week. Add your email to follow the series and read each new piece as it opens. Free, no spam, unsubscribe anytime.</p>
+<div id="mlb2-42294712" class="ml-signup ml-form-embedContainer ml-subscribe-form ml-subscribe-form-42294712">
+<div class="row-form"><form class="ml-block-form ml-signup-form" action="https://assets.mailerlite.com/jsonp/2413697/forms/189601200572729110/subscribe" method="post" target="_blank">
+<div class="ml-field-group ml-field-name"><label class="sr-only" for="ml-name-read">Name</label><input id="ml-name-read" type="text" name="fields[name]" placeholder="Your name" autocomplete="given-name"></div>
+<div class="ml-field-group ml-field-email ml-validate-email ml-validate-required"><label class="sr-only" for="ml-email-read">Email address</label><input id="ml-email-read" type="email" name="fields[email]" placeholder="your@email.com" autocomplete="email" required></div>
+<button type="submit" class="primary">Subscribe free →</button><button disabled style="display:none" type="button" class="loading"><span class="ml-form-embedSubmitLoad"></span><span class="sr-only">Loading</span></button>
+<label class="ml-consent ml-form-checkboxRow ml-validate-required"><input type="checkbox" required><span>Opt in to receive essays, book news, and updates.</span></label>
+<input type="hidden" name="ml-submit" value="1"><input type="hidden" name="anticsrf" value="true">
+</form></div><div class="row-success" style="display:none"><h4>Subscribed successfully!</h4><p>You’re on the list. Please check your inbox or spam folder for the confirmation email.</p></div></div></div>
 </div></section>
 <footer><div class="wrap">
-<a class="brand serif" href="index.html">ADRIAN T. <b style="color:var(--ox)">WOLFE</b></a>
+<p style="font-family:var(--serif);font-weight:900;font-size:1.3rem;color:var(--paper)">ADRIAN T. <b style="color:var(--ox)">WOLFE</b></p>
 <p>Not a war between men and women — but what happened to both of them inside an economy that profits from their loneliness.</p>
-<div class="flinks"><a href="listen.html">Listen</a><a href="books.html">The Books</a><a href="about.html">About</a><a href="https://adriantwolfe.substack.com/subscribe" target="_blank" rel="noopener">Subscribe</a><a href="https://adriantwolfe.substack.com" target="_blank" rel="noopener">Substack</a></div>
-<p style="margin-top:20px;opacity:.85">© 2026 Adrian T. Wolfe · adrianwolfe.com</p>
+<div class="flinks"><a href="listen.html">Read</a><a href="books.html">The Books</a><a href="about.html">About</a></div>
+<p style="margin-top:16px;opacity:.8">© 2026 Adrian T. Wolfe · adrianwolfe.com</p>
 </div></footer>
 <script>
-const btns=document.querySelectorAll('.filt');const eps=[...document.querySelectorAll('.ep')];
-btns.forEach(b=>b.addEventListener('click',()=>{btns.forEach(x=>x.classList.remove('on'));b.classList.add('on');const f=b.dataset.f;
-eps.forEach(e=>{e.style.display=(f==='all'||e.dataset.grp===f)?'flex':'none'})}));
-</script></body></html>
+var MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"];
+var today=new Date();today.setHours(0,0,0,0);
+document.querySelectorAll('.ep').forEach(function(ep){
+  var od=new Date(ep.dataset.open+"T00:00:00");od.setHours(0,0,0,0);
+  var st=ep.querySelector('[data-role="status"]');
+  if(today>=od){ st.className='ep-status open'; st.textContent='● Open now — read'; }
+  else { var ds=od.getDate()+" "+MONTHS[od.getMonth()]; st.className='ep-status soon'; st.textContent='○ Opens '+ds; }
+});
+var btns=document.querySelectorAll('.filt');var eps=[].slice.call(document.querySelectorAll('.ep'));
+btns.forEach(function(b){b.addEventListener('click',function(){btns.forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;
+eps.forEach(function(e){e.style.display=(f==='all'||e.dataset.grp===f)?'flex':'none'});});});
+function ml_webform_success_42294712(){document.querySelectorAll('.ml-subscribe-form-42294712').forEach(function(form){form.querySelector('.row-form').style.display='none';form.querySelector('.row-success').style.display='block'})}
+</script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b"></script>
+<script>fetch("https://assets.mailerlite.com/jsonp/2413697/forms/189601200572729110/takel").catch(function(){})</script>
+</body></html>
