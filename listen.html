@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<!-- BEFORE GOING LIVE: replace https://adriantwolfe.substack.com (Substack URL) everywhere. Save filenames as-is and upload all pages together. -->
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Listen — Adrian T. Wolfe</title><meta name="description" content="Essays and audio on modern love, dating, marriage and loneliness — calm, data-driven, for your commute or your walk.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0c0a;--ink2:#16130f;--paper:#f4efe6;--paper-dim:#cdbfa0;--ox:#e8634a;--ox-deep:#b8402a;--gold:#c9a24a;--grey:#c9bda6;--maxw:1180px;--serif:'Fraunces',Georgia,serif;--sans:'Archivo',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ox);color:var(--ink)}a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}.serif{font-family:var(--serif)}
+.mono{font-family:var(--sans);letter-spacing:.22em;text-transform:uppercase;font-size:.7rem;font-weight:600}
+body::before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.glow{position:fixed;border-radius:50%;filter:blur(120px);opacity:.5;z-index:0;pointer-events:none}
+.glow.a{width:600px;height:600px;background:radial-gradient(circle,#6e241688,transparent 70%);top:-200px;right:-150px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);background:rgba(14,12,10,.72);border-bottom:1px solid rgba(201,162,74,.16)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:var(--serif);font-weight:900;font-size:1.15rem;letter-spacing:.04em;word-spacing:.12em}.brand b{color:var(--ox)}
+.navlinks{display:flex;gap:30px;align-items:center}.navlinks a{font-size:.82rem;font-weight:500;color:var(--grey);transition:color .2s}.navlinks a:hover,.navlinks a.active{color:var(--paper)}
+.nav-cta{background:var(--ox);color:var(--ink)!important;padding:9px 18px;border-radius:100px;font-weight:700;font-size:.8rem}.nav-cta:hover{background:var(--paper)}
+@media(max-width:760px){.navlinks a:not(.nav-cta){display:none}}
+.phead{position:relative;z-index:2;padding:128px 0 30px}
+.phead .mono{color:var(--gold);margin-bottom:16px}
+.phead h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.4rem,6vw,4rem);line-height:1.04;letter-spacing:-.02em;max-width:18ch}
+.phead p.lead{color:var(--paper-dim);max-width:56ch;margin-top:20px;font-size:1.1rem}
+section{position:relative;z-index:2;padding:40px 0 70px}
+footer{position:relative;z-index:2;border-top:1px solid rgba(201,162,74,.14);padding:46px 0;text-align:center;margin-top:40px}
+footer .brand{font-size:1.4rem;margin-bottom:10px;display:inline-block}footer p{color:var(--grey);font-size:.82rem;max-width:50ch;margin:0 auto 8px}
+footer .flinks{display:flex;gap:22px;justify-content:center;margin-top:18px;flex-wrap:wrap}footer .flinks a{font-size:.82rem;color:var(--paper-dim)}footer .flinks a:hover{color:var(--ox)}
+.btn{display:inline-block;background:var(--ox);color:var(--ink);font-weight:800;padding:15px 32px;border-radius:100px;transition:transform .25s,background .2s}.btn:hover{transform:translateY(-3px);background:var(--paper)}
+</style></head><body>
+<div class="glow a"></div>
+<style>
+.filters{display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap}
+.filt{font-size:.78rem;font-weight:700;padding:8px 16px;border-radius:100px;border:1px solid rgba(201,162,74,.3);color:var(--paper-dim);cursor:pointer;background:none;font-family:var(--sans);transition:all .2s}
+.filt:hover{border-color:var(--ox)}.filt.on{background:var(--ox);color:var(--ink);border-color:var(--ox)}
+.eps{display:flex;flex-direction:column;gap:2px}
+.ep{display:flex;align-items:center;gap:18px;padding:18px 16px;border-radius:12px;transition:background .2s;border:1px solid transparent}
+.ep:hover{background:rgba(34,28,22,.6);border-color:rgba(201,162,74,.18)}
+.ep-play{width:42px;height:42px;flex:none;border-radius:50%;border:1.5px solid var(--ox);display:grid;place-items:center;transition:background .2s}
+.ep:hover .ep-play{background:var(--ox)}.ep-play svg{width:13px;height:13px;fill:var(--ox);margin-left:2px;transition:fill .2s}.ep:hover .ep-play svg{fill:var(--ink)}
+.ep-body{flex:1;min-width:0}.ep-body h4{font-family:var(--serif);font-size:1.08rem;font-weight:600}
+.ep-for{font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;flex:none}
+.ep-for.young{background:rgba(232,99,74,.14);color:var(--ox)}.ep-for.older{background:rgba(201,162,74,.14);color:var(--gold)}.ep-for.all{background:rgba(244,239,230,.1);color:var(--paper-dim)}
+.ep-len{font-size:.76rem;color:var(--grey);flex:none}@media(max-width:620px){.ep-len{display:none}}
+.note{background:rgba(34,28,22,.5);border:1px solid rgba(201,162,74,.2);border-radius:12px;padding:16px 20px;margin-bottom:26px;font-size:.88rem;color:var(--paper-dim)}
+.note b{color:var(--paper)}
+</style>
+<nav><div class="wrap">
+<a class="brand" href="index.html">ADRIAN T. <b>WOLFE</b></a>
+<div class="navlinks">
+<a href="listen.html" class="active">Listen</a>
+<a href="books.html" class="">The Books</a>
+<a href="about.html" class="">About</a>
+<a href="https://adriantwolfe.substack.com/subscribe" target="_blank" rel="noopener" class="nav-cta">Subscribe free</a>
+</div></div></nav>
+<div class="phead"><div class="wrap"><div class="mono">For the walk, the commute, everywhere</div>
+<h1>Listen &amp; read</h1>
+<p class="lead">Short pieces, each one standing alone. Calm, data-driven, no sides. Filter by where you are in the story — or just start at the top.</p></div></div>
+<section><div class="wrap">
+<div class="note">🎧 <b>Audio is on the way.</b> Every piece below is published as an essay now, with narrated audio rolling out across Spotify, Apple, and the newsletter. Tap any title to read it today and subscribe to get the audio first.</div>
+<div class="filters"><button class="filt on" data-f="all">All</button><button class="filt" data-f="20s">20s track</button><button class="filt" data-f="40s">40s track</button><button class="filt" data-f="Everyone">Everyone</button></div>
+<div class="eps" id="eps"><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The War That Was Installed</h4></div>
+<span class="ep-for all">Everyone</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Person in Front of You Cannot Compete with a Feed</h4></div>
+<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Men Who Went Quiet</h4></div>
+<span class="ep-for all">Everyone</span><span class="ep-len">8 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Relationship You Perform Is Not the One You Have</h4></div>
+<span class="ep-for older">40s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>You Are Not the Customer</h4></div>
+<span class="ep-for all">Everyone</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Myth of Not Needing Anyone</h4></div>
+<span class="ep-for young">20s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Slogan and the Statistics</h4></div>
+<span class="ep-for young">20s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>What the Apps Optimise For</h4></div>
+<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Half-Life of a Match</h4></div>
+<span class="ep-for young">20s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>Dopamine Is Not the Villain You Think</h4></div>
+<span class="ep-for all">Everyone</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Disappearing Offstage</h4></div>
+<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Second Shift Is a Logistics Problem</h4></div>
+<span class="ep-for older">40s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>Why "I Don't Need a Man" Became Mandatory</h4></div>
+<span class="ep-for young">20s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Loneliness Behind the Highlight Reel</h4></div>
+<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Closed World We Lost</h4></div>
+<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>Grievance Is a Business Model</h4></div>
+<span class="ep-for all">Everyone</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Self That Is Always Editing</h4></div>
+<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>Marriage Was Built for a World That No Longer Exists</h4></div>
+<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Surveillance We Volunteered For</h4></div>
+<span class="ep-for older">40s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>What "Sacred" Actually Meant</h4></div>
+<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>Strength Has Room for Need</h4></div>
+<span class="ep-for all">Everyone</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="40s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Divorce Myth That Won't Die</h4></div>
+<span class="ep-for older">40s</span><span class="ep-len">6 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="20s">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>The Self Underneath the Feed</h4></div>
+<span class="ep-for young">20s</span><span class="ep-len">7 min</span></a><a class="ep" href="https://adriantwolfe.substack.com" target="_blank" rel="noopener" data-grp="Everyone">
+<div class="ep-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="ep-body"><h4>What We Build Now</h4></div>
+<span class="ep-for all">Everyone</span><span class="ep-len">8 min</span></a></div>
+</div></section>
+<footer><div class="wrap">
+<a class="brand serif" href="index.html">ADRIAN T. <b style="color:var(--ox)">WOLFE</b></a>
+<p>Not a war between men and women — but what happened to both of them inside an economy that profits from their loneliness.</p>
+<div class="flinks"><a href="listen.html">Listen</a><a href="books.html">The Books</a><a href="about.html">About</a><a href="https://adriantwolfe.substack.com/subscribe" target="_blank" rel="noopener">Subscribe</a><a href="https://adriantwolfe.substack.com" target="_blank" rel="noopener">Substack</a></div>
+<p style="margin-top:20px;opacity:.85">© 2026 Adrian T. Wolfe · adrianwolfe.com</p>
+</div></footer>
+<script>
+const btns=document.querySelectorAll('.filt');const eps=[...document.querySelectorAll('.ep')];
+btns.forEach(b=>b.addEventListener('click',()=>{btns.forEach(x=>x.classList.remove('on'));b.classList.add('on');const f=b.dataset.f;
+eps.forEach(e=>{e.style.display=(f==='all'||e.dataset.grp===f)?'flex':'none'})}));
+</script></body></html>
