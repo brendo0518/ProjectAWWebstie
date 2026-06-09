@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head>
+<!-- EMAIL SIGNUP: replace PASTE_YOUR_FORM_ACTION_URL_HERE (in the form action) with your MailerLite/Buttondown form URL so emails are captured. -->
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>What We Build Now — Adrian T. Wolfe</title><meta name="description" content="A whole series spent naming what went wrong. This is the part where we talk about what to do — and why it is more hopeful than it sounds.">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0c0a;--paper:#f4efe6;--paper-dim:#cdbfa0;--ox:#e8634a;--gold:#c9a24a;--grey:#c9bda6;--maxw:720px;--serif:'Fraunces',Georgia,serif;--sans:'Archivo',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}::selection{background:var(--ox);color:var(--ink)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);background:rgba(14,12,10,.8);border-bottom:1px solid rgba(201,162,74,.16)}
+nav .wrap{max-width:1180px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:var(--serif);font-weight:900;font-size:1.15rem;letter-spacing:.04em;word-spacing:.12em}.brand b{color:var(--ox)}
+.navlinks{display:flex;gap:30px;align-items:center}.navlinks a{font-size:.82rem;font-weight:500;color:var(--grey)}.navlinks a:hover{color:var(--paper)}
+.nav-cta{background:var(--ox);color:var(--ink)!important;padding:9px 18px;border-radius:100px;font-weight:700;font-size:.8rem}
+@media(max-width:680px){.navlinks a:not(.nav-cta){display:none}}
+article{padding:120px 0 60px}
+.kicker{font-family:var(--sans);letter-spacing:.18em;text-transform:uppercase;font-size:.7rem;font-weight:700;color:var(--gold);margin-bottom:18px}
+article h1{font-family:var(--serif);font-weight:900;font-size:clamp(2rem,5vw,3.1rem);line-height:1.08;letter-spacing:-.02em;margin-bottom:16px}
+.sub{font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--paper-dim);margin-bottom:14px;line-height:1.4}
+.meta{font-size:.8rem;color:var(--grey);margin-bottom:8px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.audio-flag{font-size:.74rem;color:var(--grey);border:1px solid rgba(201,162,74,.3);border-radius:100px;padding:4px 12px;display:inline-flex;gap:6px;align-items:center}
+.body{font-size:1.08rem}
+.body p{margin:0 0 20px}
+.body h2{font-family:var(--serif);font-weight:700;font-size:1.5rem;margin:34px 0 12px;line-height:1.2}
+.body h3{font-family:var(--serif);font-weight:600;font-size:1.2rem;margin:26px 0 10px}
+.body em{font-style:italic;color:#e8d9c0}
+.divider{border:none;border-top:1px solid rgba(201,162,74,.18);margin:40px 0}
+.endcap{background:linear-gradient(150deg,rgba(46,36,28,.7),rgba(20,16,12,.5));border:1px solid rgba(201,162,74,.25);border-radius:18px;padding:32px;text-align:center;margin-top:30px}
+.endcap h3{font-family:var(--serif);font-size:1.4rem;margin-bottom:10px}.endcap p{color:var(--paper-dim);font-size:.95rem;margin-bottom:18px}
+.subform{display:flex;gap:8px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.subform input{flex:1;min-width:200px;padding:13px 16px;border-radius:100px;border:1px solid rgba(201,162,74,.4);background:rgba(14,12,10,.6);color:var(--paper);font-family:var(--sans);font-size:.95rem}
+.subform button{background:var(--ox);color:var(--ink);font-weight:800;padding:13px 26px;border-radius:100px;border:none;cursor:pointer;font-family:var(--sans);font-size:.95rem}
+.subform button:hover{background:var(--paper)}
+.back{display:inline-block;margin-top:30px;color:var(--ox);font-weight:700;font-size:.9rem}
+.locked{text-align:center;padding:40px 0}
+.locked .lock-ic{font-size:2.4rem;margin-bottom:14px}
+.locked h2{font-family:var(--serif);font-size:1.6rem;margin-bottom:10px}
+.locked p{color:var(--paper-dim);max-width:48ch;margin:0 auto 8px}
+footer{border-top:1px solid rgba(201,162,74,.14);padding:40px 0;text-align:center;margin-top:50px}
+footer p{color:var(--grey);font-size:.8rem;margin-bottom:6px}footer .flinks{display:flex;gap:20px;justify-content:center;margin-top:14px;flex-wrap:wrap}footer .flinks a{font-size:.8rem;color:var(--paper-dim)}
+</style></head><body><nav><div class="wrap">
+<a class="brand" href="../index.html">ADRIAN T. <b>WOLFE</b></a>
+<div class="navlinks"><a href="../listen.html">Read</a><a href="../books.html">The Books</a><a href="../about.html">About</a>
+<a href="#subscribe" class="nav-cta">Subscribe free</a></div></div></nav><article><div class="wrap">
+<div class="kicker">Essay 24 · Everyone track</div>
+<h1>What We Build Now</h1>
+<div class="sub">A whole series spent naming what went wrong. This is the part where we talk about what to do — and why it is more hopeful than it sounds.</div>
+<div class="meta"><span>8 min read</span><span class="audio-flag">🎧 Audio coming soon</span></div>
+<hr class="divider">
+<div id="gate"></div>
+<div id="content" style="display:none">
+<div class="body"><p>When I started writing about all of this — the loneliness, the comparison, the withdrawal, the performance, the grievance, the surveillance — I worried that the cumulative effect would be despair. Essay after essay naming another way the systems we live inside have made love and connection harder. Read end to end, it could sound like a case for hopelessness, a long catalogue of damage with no way out.</p>
+<p>But I have come to believe the opposite, and I want to end this arc by saying why. The diagnosis was never the point. The diagnosis was always in service of a single, genuinely hopeful conclusion, and it is this: if the difficulty was <em>installed</em> — built by systems and incentives rather than woven into human nature — then it can be <em>resisted</em>. What was built can be unbuilt. And the unbuilding is available to anyone, starting now, in the small and unglamorous choices that no system can make for you. That is not a consolation prize. It is the whole argument finally arriving where it was always headed.</p>
+<h2>What the diagnosis was for</h2>
+<p>Go back to where this started: the recognition that the war between men and women was not nature but installation — manufactured by an attention economy that profits from conflict, comparison, grievance, and loneliness, and delivered to us as if it were simply how things are. Every essay since has been a variation on that single insight, applied to a different corner of modern life.</p>
+<p>And the reason that framing matters — the reason it was worth a whole series — is that <em>the framing determines what you can do</em>. If the problem were human nature, there would be nothing to do but despair or moralise. But the problem is not human nature. It is a set of systems, incentives, and designs that shaped how we love — and systems can be seen through, incentives can be declined, designs can be resisted. The entire point of naming the machinery so precisely was never to induce despair at how powerful it is. It was to make it <em>visible</em>, because a machine you can see is a machine you can step out of, and a force you have named has already lost the power it had when it was invisible. The diagnosis was the map. And a map is what you need when you are looking for the way out.</p>
+<h2>The conditions, and how to rebuild them</h2>
+<p>Across these essays, the same handful of things kept appearing as the casualties of the systems — the conditions that love and connection actually require, quietly stripped away. And naming them as casualties is also naming them as the work: the things to rebuild, deliberately, by hand.</p>
+<p>Presence, against a machinery engineered to fragment your attention. Privacy, the closed world and the unobserved self, against a culture that wants everything visible. Vulnerability and the allowing of need, against a story that calls self-sufficiency strength. Trust, against tools that offer endless verification. The refusal of comparison, of grievance, of the performance — against an economy that profits from all three. None of these can be legislated or bought; no system will supply them, because no system profits from them. They have to be rebuilt the way they were dismantled: not all at once, but in the accumulation of small, deliberate, daily choices. The undivided hour. The unshared moment. The benefit of the doubt extended instead of the partner checked. The actual person attended to instead of the feed. Each one is small. Together, over time, they are how a life and a love get rebuilt against the current.</p>
+<h2>Why it is genuinely hopeful</h2>
+<p>Here is why this is more hopeful than a tidy solution would be. I am not offering a cure, a system, a five-step programme — and that is precisely the good news, not a disappointment. Because if the answer were a product or a programme, it would be one more thing outside your control, one more thing to acquire. Instead, the answer turns out to be a set of choices that were always available to you, that cost nothing, and that no system can take away.</p>
+<p>The systems are powerful, and I have never pretended otherwise. But they have a fundamental limit: they cannot make your choices for you. They can shape the environment, tilt the incentives, make the unhealthy path the path of least resistance — but in the actual moment, the decision to put the phone down, to extend trust, to be present, to allow your need, to attend to the real person in front of you, remains yours. That is the freedom the whole series has been building towards. Not freedom <em>from</em> the systems, which is not on offer, but freedom <em>within</em> them — the irreducible human capacity to choose differently than the machine would have you choose, one moment at a time. The systems profit from your loneliness, but they cannot compel it. That was always the loophole, and it is a permanent one.</p>
+<h2>What we build now</h2>
+<p>So this is where a series about everything that went wrong actually lands — not in despair, and not in a neat solution, but in agency. The way we love was reshaped, badly, by systems we did not choose and mostly cannot dismantle. But the conditions love requires can be understood, reclaimed, and rebuilt — deliberately, by hand, by people who refuse to let the systems have the last word.</p>
+<p>It is not a war between men and women; it never was. It is, and always was, a shared struggle against the forces that made connection so hard for all of us — which means the person across from you, of whatever sex, was never the enemy. They were the fellow casualty, depleted from the opposite direction, standing on the far side of a divide that something in the middle profited from widening. And the work in front of both of you is the same work: to rebuild, in your own life and your own relationships, the conditions the systems consumed. Not a fate to be endured, but a thing to be built. Not the end of love, but the beginning of its deliberate recovery.</p>
+<p>What we build now is up to us. The systems made the first move a long time ago. This — the small, daily, unglamorous reclaiming of presence and trust and privacy and need — is ours. And it can be built. Start anywhere. Start with the next moment you are tempted to perform instead of live, compare instead of love, check instead of trust. Choose the other thing. That is the whole of it, and it is enough, and it begins the moment you decide it does.</p></div>
+<hr class="divider">
+<div class="endcap" id="subscribe">
+<h3>Read every essay, free</h3>
+<p>One new essay opens each week. Enter your email to follow the series and get each new piece as it opens. Free, no spam.</p>
+<form class="subform" action="PASTE_YOUR_FORM_ACTION_URL_HERE" method="post" target="_blank">
+<input type="email" name="email" placeholder="your@email.com" required>
+<button type="submit">Subscribe free →</button>
+</form></div>
+<a class="back" href="../listen.html">← All essays</a>
+</div>
+</div></article>
+<footer><div class="wrap">
+<p style="font-family:var(--serif);font-weight:900;font-size:1.2rem;color:var(--paper)">ADRIAN T. <b style="color:var(--ox)">WOLFE</b></p>
+<p>Not a war between men and women — but what happened to both of them inside an economy that profits from their loneliness.</p>
+<div class="flinks"><a href="../listen.html">Read</a><a href="../books.html">The Books</a><a href="../about.html">About</a></div>
+<p style="margin-top:16px;opacity:.8">© 2026 Adrian T. Wolfe · adrianwolfe.com</p>
+</div></footer></body></html>
+<script>
+var OPEN="2026-11-15";
+var today=new Date();today.setHours(0,0,0,0);
+var od=new Date(OPEN+"T00:00:00");od.setHours(0,0,0,0);
+if(today>=od){
+  document.getElementById('content').style.display='block';
+} else {
+  var M=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var ds=od.getDate()+" "+M[od.getMonth()]+" "+od.getFullYear();
+  document.getElementById('gate').innerHTML=
+   '<div class="locked"><div class="lock-ic">🔒</div><h2>This essay opens on '+ds+'</h2>'+
+   '<p>A new essay opens every week. Subscribe free below and you\'ll be able to read this one the day it opens.</p></div>'+
+   `<div class="endcap" id="subscribe">
+<h3>Read every essay, free</h3>
+<p>One new essay opens each week. Enter your email to follow the series and get each new piece as it opens. Free, no spam.</p>
+<form class="subform" action="PASTE_YOUR_FORM_ACTION_URL_HERE" method="post" target="_blank">
+<input type="email" name="email" placeholder="your@email.com" required>
+<button type="submit">Subscribe free →</button>
+</form></div>`;
+}
+</script>
